@@ -1,0 +1,161 @@
+@import "../../../../variables";
+header {
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  .header-bgn {
+    position: absolute;
+    background: url("http://beautycarebrazil.org.br/index.hyperesources/barrasuperior.png") no-repeat;
+    background-size: 150% 100%;
+    top: 0;
+    display: block;
+    width: 100vw;
+    min-height: 92px;
+    z-index: 1;
+    .right {
+      float: right;
+      min-width: 200px;
+      margin-right: 16px;
+      text-align: right;
+      color: transparent;
+      @media only screen and (max-width: 770px) {
+        display: none;
+      }
+      .instagram {
+        cursor: pointer;
+        display: inline-block;
+        text-indent: -1000px;
+        background: url("http://beautycarebrazil.org.br/index.hyperesources/instagram.png") no-repeat;
+        width: 35px;
+        height: 35px;
+        margin-top: 16px;
+        overflow: hidden;
+      }
+      .android {
+        cursor: pointer;
+        display: inline-block;
+        text-indent: -1000px;
+        background: url("http://beautycarebrazil.org.br/index.hyperesources/androidlogo.png") no-repeat;
+        background-position: 0 3px;
+        width: 24px;
+        height: 35px;
+        margin-top: 16px;
+        margin-right: 78px;
+        overflow: hidden;
+        @media only screen and (max-width: 1200px) {
+          margin-right: 17px;
+        }
+      }
+      .app-store {
+        cursor: pointer;
+        display: inline-block;
+        text-indent: -1000px;
+        background: url("http://beautycarebrazil.org.br/index.hyperesources/applelogo.png") no-repeat;
+        width: 24px;
+        height: 35px;
+        margin-top: 16px;
+        margin-right: 17px;
+        overflow: hidden;
+      }
+      .txt {
+        cursor: pointer;
+        display: inline-block;
+        text-indent: -1000px;
+        background: url("http://beautycarebrazil.org.br/index.hyperesources/app.png") no-repeat center;
+        width: 188px;
+        height: 35px;
+        margin-top: 16px;
+        margin-right: 16px;
+        overflow: hidden;
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .user {
+        line-height: 45px;
+        color: $font-color-tertiary;
+        vertical-align: text-bottom;
+        padding-left: 20px;
+        a {
+          cursor: pointer;
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .navbar-toggle {
+    position: absolute;
+    background-image: url("http://beautycarebrazil.org.br/index.hyperesources/menu.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    width: 45px;
+    height: 25px;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+  }
+  .nav {
+    &.open {
+      left: 0;
+    }
+    left: -300px;
+    position: absolute;
+    width: 271px;
+    /*min-height: 413px;*/
+    top: 0;
+    background: url("/assets/images/shared/fundomenu.png") no-repeat left bottom;
+    z-index: 8;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.5s ease-in-out; /** Firefox **/
+    -o-transition: all 0.5s ease-in-out; /** Opera **/
+    ul {
+      display: block;
+      list-style: none;
+      padding-left: 0;
+      padding-top: 62px;
+      margin-bottom: 3rem;
+      li {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 15px center;
+        height: 39px;
+        width: 230px;
+        a {
+          display: inline-block;
+          height: 36px;
+          width: 215px;
+          overflow: hidden;
+          color: white !important;
+          text-transform: uppercase;
+          font-size: $font-size-15;
+          text-indent: 15px;
+          &:hover {
+            text-decoration: none;
+            color: $font-color-tertiary;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    width: 520px;
+    height: 220px;
+    background: url("http://beautycarebrazil.org.br/index.hyperesources/logotopo.png");
+    background-size: contain;
+    top: 0;
+    left: calc(50vw - 260px - 137px);
+    z-index: 6;
+    @media only screen and (max-width: 1200px) {
+      width: 395px; height: 167px;
+      left: calc(50vw - 200px - 115px);
+    }
+    @media only screen and (max-width: 770px) {
+      width: 260px; height: 110px;
+      left: calc(100vw - 270px);
+    }
+  }
+}

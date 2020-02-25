@@ -1,0 +1,47 @@
+div{
+    font-family: "Encode Sans";
+    font-size: 16px;
+}
+
+h1{
+    margin-left: 100px;
+    font-family: "Encode Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #026a82;
+}
+
+h4{
+    margin-left: 100px;
+    font-family: "Encode Sans";
+    color: #026a82 !important;
+}
+
+.noticia{
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.noticia.red{
+    color: red;
+}
+
+.noticia.purple{
+    color: purple;
+}
+
+.noticia.orange{
+    color: orange;
+}
+
+.noticia .fas{
+    font-size: 40px;
+}
+
+p.citacao{
+    font-size: 14px !important;
+}
+
+.img-fluid{
+    width: 100%;
+}

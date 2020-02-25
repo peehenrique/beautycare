@@ -1,0 +1,42 @@
+@import "../../../../variables";
+.end {
+  display: inline-block;
+  background: url("http://beautycarebrazil.org.br/index.hyperesources/endereco.png") no-repeat;
+  width: 399px;
+  height: 49px;
+  margin-top: 30px;
+  @include media-breakpoint-up(md) {
+    margin-top: 80px;
+  }
+}
+h5 {
+  color: $gray-500;
+  display: block;
+  margin-right: 105px;
+  font-size: 1em;
+  @include media-breakpoint-up(lg) {
+    margin-right: 325px;
+  }
+}
+.abihpec {
+  display: inline-block;
+  background: url("http://beautycarebrazil.org.br/index.hyperesources/logoabihpec.png") no-repeat;
+  background-position: 0 35px;
+  width: 195px;
+  height: 97px;
+  text-indent: -1000px;
+  color: transparent;
+  overflow: hidden;
+  @include media-breakpoint-up(lg) {
+    margin-right: 25px;
+  }
+}
+.apex {
+  display: inline-block;
+  background: url("http://www.beautycarebrazil.org.br/institucional.hyperesources/logoapexbrasil-1.png") no-repeat;
+  width: 194px;
+  height: 97px;
+  text-indent: -1000px;
+  color: transparent;
+  overflow: hidden;
+}

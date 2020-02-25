@@ -1,0 +1,87 @@
+<h1>CALENDÁRIO</h1>
+<h4>Confira os próximos eventos</h4>
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-6">
+      <ng-container *ngFor="let evento of eventosMes">
+        
+        <div class="col-12" style="margin-bottom: 10px;">
+          <div class="evento">
+            <div class="dias">{{evento.textDays?evento.textDays:evento.dias.join(', ')}}</div>
+            <div class="descricao">
+              <b>{{evento.titulo}}</b><br>
+              {{evento.tipo}}<br /> 
+              <span (click)="toggleEvento(evento)" style="cursor: pointer;">+ Saiba mais</span>
+            </div>
+            <div class="clearfix"></div>
+            <div class="saibamais" *ngIf="evento.show">
+              <button (click)="toggleEvento(evento)" class="float-right btn btn-sm btn-light mb-3">Fechar</button>
+              <div class="clearfix"></div>
+              {{evento.texto}}
+            </div>
+          </div>
+        </div>
+        
+      </ng-container>
+      <ng-container *ngIf="eventosMes.length == 0">
+        
+        <div class="col-12" style="margin-bottom: 10px;">
+          <div class="evento">
+            <div class="descricao">
+              <b>Nenhum evento previsto</b>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        
+      </ng-container>
+    </div>
+    <div class="col-6">
+      <table class="calendario">
+        <thead>
+          <tr>
+            <th colspan="7"><button class="float-left" (click)="changeMounth(-1)"> < </button> {{mesTxt}} <button class="float-right" (click)="changeMounth(1)"> > </button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="weekday">
+            <td class="fds">Dom</td>
+            <td>Seg</td>
+            <td>Ter</td>
+            <td>Qua</td>
+            <td>Qui</td>
+            <td>Sex</td>
+            <td class="fds">Sáb</td>
+          </tr>
+          <ng-container *ngIf="semanas.length == 0">
+            <tr>
+              <td colspan="7"> &nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="7">  &nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="7"> &nbsp; </td>
+            </tr>
+            <tr>
+              <td colspan="7"> &nbsp; </td>
+            </tr>
+            <tr>
+              <td colspan="7"> &nbsp; </td>
+            </tr>
+          </ng-container>
+          <tr *ngFor="let dias of semanas;">
+            <td *ngFor="let dia of dias;let i = index" class="{{i==0||i==6?'fds':''}}  {{dia.dateEvent?'diaEvento':''}}">{{dia.dia}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="col-4 mb-5">
+      <a href="/assets/pdf/eventos_extras_hppc_atualizada.pdf" target="_blank"><img src="assets/images/eventos.png" /></a>
+    </div>
+   
+  </div>
+</div>

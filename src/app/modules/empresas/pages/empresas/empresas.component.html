@@ -1,0 +1,124 @@
+<div class="container white">
+    <div class="row">
+        <div class="col-12 mb-5">
+            <h2>
+                Empresas
+            </h2>
+        </div>
+        <div class="col-12" *ngIf="categorias && categorias.length > 0">
+            <form (ngSubmit)="search()" [formGroup]="searchFormGroup">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="pb-2">Nome da Empresa</h4>
+                        <input type="text" formControlName="terms" class="form-control" placeholder="Nome da empresa" name="terms">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" *ngIf="categorias">
+
+                        <div class="w-100 d-block"></div>
+
+                        <h4 class="pt-3 pb-2">Atuação</h4>
+
+                        <div class="form-row mb-2 pl-md-4">
+                            <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="produtos" formControlName="produtos" value="link"><label class="form-check-label" for="produtos">Produtos Acabados</label></div>
+                            <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': searchFormGroup.get('produtos').value === true}">
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_1" formControlName="produtos_1" value="1"><label class="form-check-label" for="produtos_1">Prod. Banho</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_2" formControlName="produtos_2" value="1"><label class="form-check-label" for="produtos_2">Prod. Cabelo</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_3" formControlName="produtos_3" value="1"><label class="form-check-label" for="produtos_3">Hig. Oral</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_4" formControlName="produtos_4" value="1"><label class="form-check-label" for="produtos_4">Prod. Pele</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_5" formControlName="produtos_5" value="1"><label class="form-check-label" for="produtos_5">Prod. Masculino</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_6" formControlName="produtos_6" value="1"><label class="form-check-label" for="produtos_6">Maquiagem</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_7" formControlName="produtos_7" value="1"><label class="form-check-label" for="produtos_7">Desodorante</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_8" formControlName="produtos_8" value="1"><label class="form-check-label" for="produtos_8">Prod. Infanfil</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_9" formControlName="produtos_9" value="1"><label class="form-check-label" for="produtos_9">Perfumaria</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_10" formControlName="produtos_10" value="1"><label class="form-check-label" for="produtos_10">Depilatórios</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_11" formControlName="produtos_11" value="1"><label class="form-check-label" for="produtos_11">Cuid. Sol</label></div>
+                            </div>
+
+                        </div>
+                        <div class="form-row mb-2 pl-md-4">
+                            <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="ingredientes" formControlName="ingredientes" value="link"><label class="form-check-label" for="ingredientes">Ingredientes</label></div>
+                            <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': searchFormGroup.get('ingredientes').value === true}">
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_1" formControlName="ingredientes_1" value="1"><label class="form-check-label" for="ingredientes_1">Tensoativos</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_2" formControlName="ingredientes_2" value="1"><label class="form-check-label" for="ingredientes_2">Emulsionantes</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_3" formControlName="ingredientes_3" value="1"><label class="form-check-label" for="ingredientes_3">Emolientes</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_4" formControlName="ingredientes_4" value="1"><label class="form-check-label" for="ingredientes_4">Extratos Vegetais</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_5" formControlName="ingredientes_5" value="1"><label class="form-check-label" for="ingredientes_5">Proteínas</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_6" formControlName="ingredientes_6" value="1"><label class="form-check-label" for="ingredientes_6">Óleos e Gorduras</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_7" formControlName="ingredientes_7" value="1"><label class="form-check-label" for="ingredientes_7">Ativos Capilares</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_8" formControlName="ingredientes_8" value="1"><label class="form-check-label" for="ingredientes_8">Ativos de Pele</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_9" formControlName="ingredientes_9" value="1"><label class="form-check-label" for="ingredientes_9">Filtro solares</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_10" formControlName="ingredientes_10" value="1"><label class="form-check-label" for="ingredientes_10">Conservantes</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_11" formControlName="ingredientes_11" value="1"><label class="form-check-label" for="ingredientes_11">Corantes</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_12" formControlName="ingredientes_12" value="1"><label class="form-check-label" for="ingredientes_12">Fragancias</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_13" formControlName="ingredientes_13" value="1"><label class="form-check-label" for="ingredientes_13">Gomas e Espessantes</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_14" formControlName="ingredientes_14" value="1"><label class="form-check-label" for="ingredientes_14">Óleos Essenciais</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_15" formControlName="ingredientes_15" value="1"><label class="form-check-label" for="ingredientes_15">Polímeros</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_16" formControlName="ingredientes_16" value="1"><label class="form-check-label" for="ingredientes_16">Silicone</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_17" formControlName="ingredientes_17" value="1"><label class="form-check-label" for="ingredientes_17">Modificadores Reológicos</label></div>
+                            </div>
+                        </div>
+                        <div class="form-row mb-2 pl-md-4">
+                            <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="embalagens" formControlName="embalagens" value="link"><label class="form-check-label" for="embalagens">Embalagens</label></div>
+                            <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': searchFormGroup.get('embalagens').value === true}">
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="embalagens_1" formControlName="embalagens_1" value="1"><label class="form-check-label" for="embalagens_1">Vidro</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="embalagens_2" formControlName="embalagens_2" value="1"><label class="form-check-label" for="embalagens_2">Plastico</label></div>
+                            </div>
+                        </div>
+                        <div class="form-row mb-2 pl-md-4">
+                            <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="servicos" formControlName="servicos" value="link"><label class="form-check-label" for="servicos">Serviços de Pesquisa Clínica e Laboratorial</label></div>
+                        </div>
+                        <div class="form-row pl-md-4">
+                            <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="acessorios" formControlName="acessorios" value="link"><label class="form-check-label" for="acessorios">Acessórios e equipamentos de beleza</label></div>
+                            <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': searchFormGroup.get('acessorios').value === true}">
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_1" formControlName="acessorios_1" value="1"><label class="form-check-label" for="acessorios_1">Material promocional</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_2" formControlName="acessorios_2" value="1"><label class="form-check-label" for="acessorios_2">Mobiliário</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_3" formControlName="acessorios_3" value="1"><label class="form-check-label" for="acessorios_3">Equipamentos</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_4" formControlName="acessorios_4" value="1"><label class="form-check-label" for="acessorios_4">Catálogo</label></div>
+                                <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_5" formControlName="acessorios_5" value="1"><label class="form-check-label" for="acessorios_5">Acessórios de beleza</label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" *ngIf="categorias">
+
+                        <div class="w-100 d-block"></div>
+
+                        <h4 class="pt-3 pb-2">Exporta para</h4>
+
+                        <div class="form-row mb-2">
+                            <div class="form-group col-12">
+                                <select class="custom-select mr-sm-2" formControlName="exporta" name="exporta" id="inlineFormCustomSelect">
+                                    <option value="" selected>Escolha um país...</option>
+                                    <option value="{{c.id}}" *ngFor="let c of paises">{{c.pais}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="col-auto">
+                    <button class="btn btn-primary" (click)="serachBtn()">Buscar</button>
+                </div-->
+            </form>
+        </div>
+        <div class="col-12" *ngIf="res">
+            <div class="row mb-3" *ngFor="let e of res.results">
+                <div class="col-12 col-sm-4"><div class="wire pointer d-flex justify-content-center align-items-center" 
+                    routerLink="/empresas/empresa/{{e.id}}"><img [src]="environment.API_URL + '/upload/logo/' + e['logo']" 
+                    appFit="" class="pointer" alt=""></div></div>
+                <div class="col-12 col-sm-8">
+                    <h3 class="pointer" routerLink="/empresas/empresa/{{e.id}}">{{e.nome_fantasia}}</h3>
+                    <h4 class="pointer" routerLink="/empresas/empresa/{{e.id}}">{{e.razao_social}}</h4>
+                    <p class="pointer" routerLink="/empresas/empresa/{{e.id}}">{{e.descricao | words:20}}</p>
+                </div>
+            </div>
+            <div class="pagination">
+                <ngb-pagination [collectionSize]="res.count" [(page)]="page" [pageSize]="res.perPage" (pageChange)="paginate()"
+                                aria-label="Default pagination"></ngb-pagination>
+            </div>
+        </div>
+    </div>
+</div>

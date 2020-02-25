@@ -1,0 +1,101 @@
+div.p{
+    margin: 20px 169px;
+    font-family: "Encode Sans";
+    font-size: 16px;
+}
+
+h1{
+    margin-left: 100px;
+    font-family: "Encode Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #026a82;
+}
+
+h4{
+    margin-left: 100px;
+    font-family: "Encode Sans";
+    color: #026a82 !important;
+}
+
+.evento{
+    width: 100%;
+    clear: both;
+}
+
+.evento .dias{
+    float: left;
+    background:#fcb03d;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.evento .saibamais{
+    
+    background:#fcb03d;
+    color: #000;
+    padding: 20px;
+    margin: 1px;
+}
+
+.evento .descricao{
+    float: left;
+    height: 90px;
+    width: 310px;
+    margin-left: 10px;
+}
+
+.evento .descricao b{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.calendario{
+    width: 100%;
+    font-size: 30px;
+}
+
+.calendario thead tr{
+    background: #fcb03d;
+}
+
+.calendario thead tr th{
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+}
+
+.calendario thead button{
+    background: #fff;
+    color: #fcb03d;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    line-height: 10px;
+    border-radius: 66px;
+    cursor: pointer;
+}
+
+.calendario thead button:hover{
+    background: #fdcc83;
+    color: #fcb03d;
+}
+
+.calendario tbody tr td{
+    padding: 10px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.fds{
+    background: #DEDEDE;
+}
+
+.diaEvento{
+    background: #fcb03d;
+    color:#FFF;
+}

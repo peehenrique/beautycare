@@ -1,0 +1,13 @@
+<h1>NOTÍCIAS</h1>
+<div class="container mt-5">
+  <ng-container *ngFor="let noticia of noticias; let i = index">
+    <div class="row mb-3">
+      <div class="col-12">
+        <div class="noticia {{noticia.cor}}" (click)="toggleNoticia(noticia)"><i class="fas fa-file-alt"></i>&nbsp; <span [innerHTML]="noticia.titulo"></span></div>
+      </div>
+      <div *ngIf="noticia.show" class="col-12 mt-5"><button class="btn btn-sm btn-warning text-white  float-right" (click)="noticia.show=false">Voltar</button></div>
+      <div *ngIf="noticia.show" class="col-12 mt-3" [innerHTML]="noticia.conteudo"></div>
+    </div>
+  </ng-container>
+</div>
+

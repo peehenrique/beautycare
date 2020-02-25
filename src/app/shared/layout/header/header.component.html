@@ -1,0 +1,30 @@
+<header>
+    <div class="header-bgn">
+        <div class="right">
+            <span class="txt">App BeautyCare Brazil</span>
+            <span class="app-store">AppStore</span>
+            <span class="android">Android</span>
+            <span class="instagram mr-3">Instagram</span>
+            <span class="user pr-4" *ngIf="globals.isSignedIn">Olá {{globals.nameSignedIn}}. <a (click)="logout()">sair</a></span>
+        </div>
+    </div>
+    <div class="navbar-toggle" (click)="open = !open"></div>
+    <div class="nav" [ngClass]="{'open': open}">
+        <ul class="site-nav">
+            <li><a routerLink="/institucional">Institucional</a></li>
+            <li><a routerLink="/sobre">Sobre o projeto</a></li>
+            <li><a routerLink="/documentos">Documentos</a></li>
+            <li><a routerLink="/empresas" (click)="open = !open">Empresas Participantes</a></li>
+            <li><a routerLink="/informacoes">Informações de Mercado</a></li>
+            <li><a routerLink="/calendario">Calendário</a></li>
+            <li><a routerLink="/noticias">Notícias</a></li>
+            <li><a routerLink="/contato">Contato</a></li>
+            <li><a routerLink="/cadastro/edit" (click)="open = !open">Editar Cadastro</a></li>
+            <li><a routerLink="/cadastro/perfil" (click)="open = !open">Perfil</a></li>
+            <li *ngIf="globals.role && globals.role !== 'guest'"><a routerLink="/mercado" (click)="open = !open">Mercado</a></li>
+            <li *ngIf="globals.role && globals.role === 'admin'"><a routerLink="/admin/noticias" (click)="open = !open">Adm. Notícias</a></li>
+            <li *ngIf="globals.role && globals.role === 'admin'"><a routerLink="/admin/empresas" (click)="open = !open">Adm. Empresas</a></li>
+        </ul>
+    </div>
+    <div class="logo" routerLink="/"></div>
+</header>

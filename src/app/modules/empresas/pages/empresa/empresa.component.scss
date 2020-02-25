@@ -1,0 +1,46 @@
+@import "../../../../../variables";
+.wire {
+  border: $gray-300 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  min-height: 250px;
+  text-align: center;
+  img {
+    max-height: 230px;
+    max-width: calc(100% - 20px);
+  }
+}
+.ficha {
+  div.row {
+    border-bottom: $font-color-tertiary 1px solid;
+  }
+  .item {
+    font-weight: $font-weight-semi-bold;
+    color: $font-color-secondary;
+    padding-top: 4px;
+    margin-bottom: 4px;
+  }
+  .value {
+    padding-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+.descricao {
+  white-space: pre-wrap;
+}
+.sub {
+  ul {
+    display: block;
+    padding: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 4px 12px;
+      margin: 5px;
+      border: $font-color-secondary 1px solid;
+      color: $font-color-secondary;
+      border-radius: 5px;
+    }
+  }
+}

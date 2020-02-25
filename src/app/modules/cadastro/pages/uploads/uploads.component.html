@@ -1,0 +1,56 @@
+<div class="container white">
+    <div class="row">
+        <div class="col-12">
+            <h2>
+                Cadastro
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form class="cadastro" (ngSubmit)="submitCompanyArt()" [formGroup]="companyFilesFormGroup" enctype="multipart/form-data" novalidate>
+                <h3 class="pt-3 pb-2">Material Visual</h3>
+                <div class="row">
+                    <div class="form-group col-12 col-sm-6">
+                        <h4 class="pb-3">Logomarca</h4>
+                        <p>Envie um logo no formato JPG, GIF ou PNG</p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="file" class="form-control-file" (change)="getLogo($event)" id="formfield" formControlName="logo">
+                                <div class="red-alert">
+                                    <div *ngIf="imageError"
+                                         class="small">
+                                        <div>Imagem inválida, somente é permitido jpg ou jpeg no formato {{imageWidth}} x {{imageHeight}}.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12 col-sm-6">
+                        <h4 class="pb-3">Arte</h4>
+                        <p>Envie uma arte no formato JPG, GIF ou PNG com resolução (em pixels) recomendada de {{imageWidth}}px por {{imageHeight}}px. Esta arte será utilizada para gerar um PDF sobre a sua empresa, dispoível para usuários cadastrados na plataforma.
+                            <a href="./assets/images/cadastro/exemplo.pdf" target="_blank">Clique aqui</a> para ver um exemplo.</p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formfield"></label>
+                                <input type="file" class="form-control-file" (change)="getArte($event)" id="formfield" formControlName="arte">
+                                <div class="red-alert">
+                                    <div *ngIf="imageError"
+                                         class="small">
+                                        <div>Imagem inválida, somente é permitido jpg, jpeg, giv ou png.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12 text-center mt-5">
+                        <button type="submit" class="btn btn-lg btn-primary px-5" [disabled]="companyFilesFormGroup.invalid || companyFilesFormGroup.pristine">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

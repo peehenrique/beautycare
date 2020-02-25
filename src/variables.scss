@@ -1,0 +1,53 @@
+$font-family-sans-serif: 'Encode Sans', sans-serif;
+$font-size-base: 1rem;
+$font-size-11: 0.688rem;
+$font-size-12: 0.750rem;
+$font-size-13: 0.813rem;
+$font-size-14: 0.875rem;
+$font-size-15: 0.882rem;
+$font-size-16: 1rem;
+$font-size-18: 1.125rem;
+$font-size-19: 1.188rem;
+$font-size-20: 1.250rem;
+$font-size-22: 1.375rem;
+$font-size-24: 1.500rem;
+$font-size-26: 1.625rem;
+$font-size-28: 1.750rem;
+$font-size-30: 1.875rem;
+$font-size-36: 2.250rem;
+$font-size-45: 2.813rem;
+
+$font-color-primary: #7d7d7d;
+$font-color-secondary: #026b82;
+$font-color-tertiary: #fcaf17;
+
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+$border-radius: 4px;
+
+$red: #c62d30;
+
+$h3-font-size: 2.118rem;
+$h4-font-size: 1.059rem;
+$hx-color: #404041;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+@function mdi($name) {
+  @return char(nth($hexes, index($names, $name)));
+}
+$mdi-font-path:        "/assets/fonts" !default;
+
+@import "~@mdi/font/scss/materialdesignicons";
+@import "~bootstrap/scss/bootstrap";

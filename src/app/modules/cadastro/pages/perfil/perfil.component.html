@@ -1,0 +1,103 @@
+<div class="container white">
+  <div class="row">
+    <div class="col-12">
+      <h2>
+        Perfil
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <form class="cadastro" (ngSubmit)="updateProfile()" [formGroup]="profileFormGroup" novalidate>
+        <h3 class="pt-3 pb-2">Dados de Acesso</h3>
+        <div class="row">
+          <div class="form-group col-12 col-sm-6">
+            <label for="name">Nome</label>
+            <input value=""
+                   appOnlyLetters
+                   type="text"
+                   class="form-control"
+                   id="name"
+                   name="name"
+                   maxlength="100"
+                   formControlName="name"
+                   required>
+            <div class="red-alert">
+              <div *ngIf="profileFormGroup.get('name').invalid && (profileFormGroup.get('name').dirty || profileFormGroup.get('name').touched)"
+                   class="small">
+                <div *ngIf="profileFormGroup.get('name').errors">Nome é obrigatório.</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-6">
+            <label for="email">E-mail</label>
+            <input value=""
+                   type="email"
+                   class="form-control"
+                   id="email"
+                   name="email"
+                   formControlName="email"
+                   maxlength="255"
+                   required>
+            <div class="red-alert">
+              <div *ngIf="profileFormGroup.get('email').invalid && (profileFormGroup.get('email').dirty || profileFormGroup.get('email').touched)"
+                   class="small">
+                <div *ngIf="profileFormGroup.get('email').errors">Um e-mail é obrigatório</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-12 col-sm-6">
+            <label for="password">Senha
+              <small>A senha deve conter 6 ou mais caracteres, ao menos uma letra e um número.</small>
+            </label>
+            <input value=""
+                   type="password"
+                   class="form-control"
+                   id="password"
+                   name="password"
+                   maxlength="100"
+                   formControlName="password"
+                   required>
+            <div class="red-alert">
+              <div *ngIf="passwordError && (profileFormGroup.get('password').dirty || profileFormGroup.get('password').touched)" class="small">
+                <div *ngIf="passwordError">As senhas não coincidem.</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-12 col-sm-6">
+            <label for="password_confirm">Confirme sua senha</label>
+            <input value=""
+                   type="password"
+                   class="form-control"
+                   id="password_confirm"
+                   name="password_confirm"
+                   maxlength="100"
+                   formControlName="password_confirm"
+                   required>
+          </div>
+        </div>
+
+        <div class="row mt-3" *ngIf="saved">
+          <div class="col">
+            <div class="alert alert-success" role="alert">
+              Seu perfil foi atualizado com sucesso.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-12 text-center mt-5">
+            <button type="submit" class="btn btn-lg btn-primary px-5">Enviar</button>
+          </div>
+        </div>
+        <!--
+        {{profileFormGroup.status}}
+        {{findInvalidControls()}}
+        -->
+      </form>
+    </div>
+  </div>
+</div>

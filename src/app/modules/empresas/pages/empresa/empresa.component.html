@@ -1,0 +1,72 @@
+<div class="container white">
+    <div class="row" *ngIf="empresa">
+        <div class="col-12 mb-5">
+            <h2>
+                {{empresa.nome_fantasia}}
+            </h2>
+            <h4>{{empresa.razao_social}}</h4>
+        </div>
+
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="wire d-flex justify-content-center align-items-center">
+                        <img src="{{environment.API_URL + '/upload/logo/' + empresa['logo'] }}" appFit="" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0 ficha">
+                    <h5 class="mt-4 mt-md-0">Ficha Técnica</h5>
+                    <div class="row">
+                        <div class="item col-4">Website</div>
+                        <div class="value col-8">{{empresa.website}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="item col-4">Responsável</div>
+                        <div class="value col-8">{{empresa.contato}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="item col-4">E-mail</div>
+                        <div class="value col-8">{{empresa.email}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="item col-4">Telefone</div>
+                        <div class="value col-8">+{{empresa.area_code}} {{empresa.telefone}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="item col-4">Endereço</div>
+                        <div class="value col-8">{{empresa.end_rua}}, {{empresa.end_cidade}}, {{empresa.end_estado}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="item col-4">Material de apoio</div>
+                        <div class="value col-8"><a class="mdi mdi-file-pdf" (click)="openfile(empresa.pdf)"><i></i> Download PDF</a><a class="download-pdf-link" #downloadPdfLink></a></div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-12 descricao">{{empresa.descricao}}</div>
+            </div>
+            <div>
+                <div><h3>Atuação</h3></div>
+                <div class="categoria row" *ngFor="let c of empresa.categorias">
+                    <div class="cat col-12"><h5>{{c.categoria}}</h5></div>
+                    <div class="sub col-12">
+                        <ul>
+                            <li *ngFor="let s of c.sub">{{s.categoria}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categoria row">
+                    <div class="cat col-12"><h5>Países para onde exporta</h5></div>
+                    <div class="sub col-12">
+                        <ul>
+                            <li *ngFor="let p of empresa.paises">{{p.pais}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

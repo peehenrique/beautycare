@@ -1,0 +1,445 @@
+<div class="container white">
+    <div class="row">
+        <div class="col-12">
+            <h2>
+                Cadastro
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form class="cadastro" (ngSubmit)="submitCompanyInfo()" [formGroup]="companyDataFormGroup" enctype="multipart/form-data" novalidate>
+                <h3 class="pt-3 pb-2">Dados de Acesso</h3>
+                <div class="row">
+                    <div class="form-group col-12 col-sm-6">
+                        <label for="name">Nome</label>
+                        <input value=""
+                               appOnlyLetters
+                               type="text"
+                               class="form-control"
+                               id="name"
+                               name="name"
+                               maxlength="100"
+                               formControlName="name"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('name').invalid && (companyDataFormGroup.get('name').dirty || companyDataFormGroup.get('name').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('name').errors">Nome é obrigatório.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-12 col-sm-6">
+                        <label for="email">E-mail</label>
+                        <input value=""
+                               type="email"
+                               class="form-control"
+                               id="email"
+                               name="email"
+                               formControlName="email"
+                               maxlength="255"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('email').invalid && (companyDataFormGroup.get('email').dirty || companyDataFormGroup.get('email').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('email').errors">Um e-mail é obrigatório</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12 col-sm-6">
+                        <label for="password">Senha
+                            <small>A senha deve conter 6 ou mais caracteres, ao menos uma letra e um número.</small>
+                        </label>
+                        <input value=""
+                               type="password"
+                               class="form-control"
+                               id="password"
+                               name="password"
+                               maxlength="100"
+                               formControlName="password"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="passwordError || companyDataFormGroup.get('password').invalid && (companyDataFormGroup.get('password').dirty || companyDataFormGroup.get('password').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('password').errors">Digite uma senha.</div>
+                                <div *ngIf="passwordError">As senhas não coincidem.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-12 col-sm-6">
+                        <label for="password_confirm">Confirme sua senha</label>
+                        <input value=""
+                               type="password"
+                               class="form-control"
+                               id="password_confirm"
+                               name="password_confirm"
+                               maxlength="100"
+                               formControlName="password_confirm"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('password_confirm').invalid && (companyDataFormGroup.get('password_confirm').dirty || companyDataFormGroup.get('password_confirm').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('password_confirm').errors.required">Confirme sua senha.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="pt-3 pb-2">Dados da Empresa</h3>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="razao">Razão Social</label>
+                        <input value=""
+                               type="text"
+                               class="form-control"
+                               id="razao"
+                               name="razao"
+                               maxlength="255"
+                               formControlName="razao"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('razao').invalid && (companyDataFormGroup.get('razao').dirty || companyDataFormGroup.get('razao').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('razao').errors.required">Digite razão social da empresa.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="marca">Nome Fantasia</label>
+                        <input value=""
+                               type="text"
+                               class="form-control"
+                               id="marca"
+                               name="marca"
+                               maxlength="255"
+                               formControlName="marca"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('marca').invalid && (companyDataFormGroup.get('marca').dirty || companyDataFormGroup.get('marca').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('marca').errors.required">Digite o nome fantasia da empresa.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="website">Website</label>
+                        <input value=""
+                               type="text"
+                               class="form-control"
+                               id="website"
+                               name="website"
+                               maxlength="255"
+                               formControlName="website"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('website').invalid && (companyDataFormGroup.get('website').dirty || companyDataFormGroup.get('website').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('website').errors.required">Preencha o website da empresa.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12 col-sm-6 col-md-4">
+                        <label for="contato">Pessoa de Contato</label>
+                        <input value=""
+                               type="text"
+                               class="form-control"
+                               id="contato"
+                               name="contato"
+                               maxlength="255"
+                               formControlName="contato"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('contato').invalid && (companyDataFormGroup.get('contato').dirty || companyDataFormGroup.get('contato').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('contato').errors.required">Digite o nome de um responsável.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-12 col-sm-6 col-md-4">
+                        <label for="contato">E-mail</label>
+                        <input value=""
+                               type="email"
+                               class="form-control"
+                               id="email_contato"
+                               name="email_contato"
+                               maxlength="255"
+                               formControlName="email_contato"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('email_contato').invalid && (companyDataFormGroup.get('email_contato').dirty || companyDataFormGroup.get('email_contato').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('email_contato').errors.required">Digite o email do responsável.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-4">
+                        <label for="contato">Telefone de Contato</label>
+                        <div>
+                            <span style="width: 120px; display: inline-block; vertical-align: bottom; margin-right: 15px;">
+                                <ng-select
+                                        [items]="paises"
+                                        [multiple]="false"
+                                        bindLabel="pais"
+                                        bindValue="prefixo"
+                                        [clearable]="false"
+                                        placeholder="País"
+                                        formControlName="area_code">
+
+                                    <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                                        <span class="ng-value-label"><img *ngIf="item.iso" [src]="'./assets/images/flags/' + item.iso.toLowerCase() + '.png'" width="20px" height="15px"> {{item.prefixo}}</span>
+                                        <span class="ng-value-icon right" (click)="clear(item)" aria-hidden="true">×</span>
+                                    </ng-template>
+
+                                    <ng-template ng-option-tmp let-item="item">
+                                        <img [src]="'./assets/images/flags/' + item.iso.toLowerCase() + '.png'" width="20px" height="15px"> {{item.pais}}
+                                    </ng-template>
+                                </ng-select>
+                            </span>
+                            <input style="display: inline-block; max-width: calc(100% - 135px)" value=""
+                                   type="text"
+                                   class="form-control"
+                                   id="telefone"
+                                   name="telefone"
+                                   maxlength="255"
+                                   appOnlyNumbers
+                                   formControlName="telefone"
+                                   required>
+                        </div>
+                        <div class="red-alert">
+                            <div *ngIf="(companyDataFormGroup.get('telefone').invalid && (companyDataFormGroup.get('telefone').dirty || companyDataFormGroup.get('telefone').touched)) || (companyDataFormGroup.get('area_code').invalid && (companyDataFormGroup.get('area_code').dirty || companyDataFormGroup.get('area_code').touched))"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('telefone').errors">Digite o telefone do responsável.</div>
+                                <div *ngIf="companyDataFormGroup.get('area_code').errors">Escolha um código de área.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="pt-3 pb-2">Endereço</h3>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="end_rua">Endereço <small>(Exemplo: Rua, número, andar / sala, bairro)</small></label>
+                        <input value=""
+                               type="text"
+                               class="form-control"
+                               id="end_rua"
+                               name="end_rua"
+                               maxlength="255"
+                               formControlName="end_rua"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('end_rua').invalid && (companyDataFormGroup.get('end_rua').dirty || companyDataFormGroup.get('end_rua').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('end_rua').errors.required">Preencha a rua.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12 col-md-4">
+                        <label for="end_cidade">Cidade</label>
+                        <input value=""
+                               type="text"
+                               class="form-control"
+                               id="end_cidade"
+                               name="end_cidade"
+                               maxlength="255"
+                               formControlName="end_cidade"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('end_cidade').invalid && (companyDataFormGroup.get('end_cidade').dirty || companyDataFormGroup.get('end_cidade').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('end_cidade').errors.required">Preencha a cidade.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-6 col-md-2">
+                        <label for="end_estado">Estado</label>
+                        <input value=""
+                               type="text"
+                               placeholder="UF"
+                               class="form-control"
+                               id="end_estado"
+                               name="end_estado"
+                               maxlength="2"
+                               formControlName="end_estado"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('end_estado').invalid && (companyDataFormGroup.get('end_estado').dirty || companyDataFormGroup.get('end_estado').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('end_estado').errors.required">Preencha o estado.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-6 col-md-2">
+                        <label for="end_postal">Cód. Postal</label>
+                        <input value=""
+                               type="text"
+                               placeholder="05865-001"
+                               class="form-control"
+                               id="end_postal"
+                               name="end_postal"
+                               formControlName="end_postal"
+                               required>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('end_postal').invalid && (companyDataFormGroup.get('end_postal').dirty || companyDataFormGroup.get('end_postal').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('end_postal').errors.required">Preencha o cód. postal.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="end_pais">País</label>
+                        <ng-select
+                                [items]="paises"
+                                [multiple]="false"
+                                bindLabel="pais"
+                                bindValue="iso"
+                                labelForId="end_pais"
+                                formControlName="end_pais">
+
+                            <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                                <span class="ng-value-label"><img [src]="'./assets/images/flags/' + item.iso.toLowerCase() + '.png'" width="20px" height="15px"> {{item.pais}}</span>
+                                <span class="ng-value-icon right" (click)="clear(item)" aria-hidden="true">×</span>
+                            </ng-template>
+
+                            <ng-template ng-option-tmp let-item="item">
+                                <img [src]="'./assets/images/flags/' + item.iso.toLowerCase() + '.png'" width="20px" height="15px"> {{item.pais}}
+                            </ng-template>
+                        </ng-select>
+                    </div>
+                </div>
+
+                <h3 class="pt-3 pb-2">Sobre</h3>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="descricao">Breve descrição da empresa <small></small></label>
+                        <textarea name="descricao" id="descricao" formControlName="descricao" maxlength="900" cols="30" rows="6" class="form-control w-100"></textarea>
+                        <small class="d-block w-100">{{900 - companyDataFormGroup.get('descricao').value.length}} caracteres restantes.</small>
+                        <div class="red-alert">
+                            <div *ngIf="companyDataFormGroup.get('descricao').invalid && (companyDataFormGroup.get('descricao').dirty || companyDataFormGroup.get('descricao').touched)"
+                                 class="small">
+                                <div *ngIf="companyDataFormGroup.get('descricao').errors.required">Preencha a descrição.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="pt-3 pb-2">Atuação</h3>
+
+                <h4 class="pb-3">Produtos e Serviços</h4>
+
+                <div class="form-row mb-4 pl-md-4">
+                    <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="produtos" formControlName="produtos" value="link"><label class="form-check-label" for="produtos">Produtos Acabados</label></div>
+                    <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': companyDataFormGroup.get('produtos').value === true}">
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_1" formControlName="produtos_1" value="1"><label class="form-check-label" for="produtos_1">Prod. Banho</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_2" formControlName="produtos_2" value="1"><label class="form-check-label" for="produtos_2">Prod. Cabelo</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_3" formControlName="produtos_3" value="1"><label class="form-check-label" for="produtos_3">Hig. Oral</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_4" formControlName="produtos_4" value="1"><label class="form-check-label" for="produtos_4">Prod. Pele</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_5" formControlName="produtos_5" value="1"><label class="form-check-label" for="produtos_5">Prod. Masculino</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_6" formControlName="produtos_6" value="1"><label class="form-check-label" for="produtos_6">Maquiagem</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_7" formControlName="produtos_7" value="1"><label class="form-check-label" for="produtos_7">Desodorante</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_8" formControlName="produtos_8" value="1"><label class="form-check-label" for="produtos_8">Prod. Infanfil</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_9" formControlName="produtos_9" value="1"><label class="form-check-label" for="produtos_9">Perfumaria</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_10" formControlName="produtos_10" value="1"><label class="form-check-label" for="produtos_10">Depilatórios</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="produtos_11" formControlName="produtos_11" value="1"><label class="form-check-label" for="produtos_11">Cuid. Sol</label></div>
+                    </div>
+
+                </div>
+                <div class="form-row mb-4 pl-md-4">
+                    <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="ingredientes" formControlName="ingredientes" value="link"><label class="form-check-label" for="ingredientes">Ingredientes</label></div>
+                    <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': companyDataFormGroup.get('ingredientes').value === true}">
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_1" formControlName="ingredientes_1" value="1"><label class="form-check-label" for="ingredientes_1">Tensoativos</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_2" formControlName="ingredientes_2" value="1"><label class="form-check-label" for="ingredientes_2">Emulsionantes</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_3" formControlName="ingredientes_3" value="1"><label class="form-check-label" for="ingredientes_3">Emolientes</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_4" formControlName="ingredientes_4" value="1"><label class="form-check-label" for="ingredientes_4">Extratos Vegetais</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_5" formControlName="ingredientes_5" value="1"><label class="form-check-label" for="ingredientes_5">Proteínas</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_6" formControlName="ingredientes_6" value="1"><label class="form-check-label" for="ingredientes_6">Óleos e Gorduras</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_7" formControlName="ingredientes_7" value="1"><label class="form-check-label" for="ingredientes_7">Ativos Capilares</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_8" formControlName="ingredientes_8" value="1"><label class="form-check-label" for="ingredientes_8">Ativos de Pele</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_9" formControlName="ingredientes_9" value="1"><label class="form-check-label" for="ingredientes_9">Filtro solares</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_10" formControlName="ingredientes_10" value="1"><label class="form-check-label" for="ingredientes_10">Conservantes</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_11" formControlName="ingredientes_11" value="1"><label class="form-check-label" for="ingredientes_11">Corantes</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_12" formControlName="ingredientes_12" value="1"><label class="form-check-label" for="ingredientes_12">Fragancias</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_13" formControlName="ingredientes_13" value="1"><label class="form-check-label" for="ingredientes_13">Gomas e Espessantes</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_14" formControlName="ingredientes_14" value="1"><label class="form-check-label" for="ingredientes_14">Óleos Essenciais</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_15" formControlName="ingredientes_15" value="1"><label class="form-check-label" for="ingredientes_15">Polímeros</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_16" formControlName="ingredientes_16" value="1"><label class="form-check-label" for="ingredientes_16">Silicone</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="ingredientes_17" formControlName="ingredientes_17" value="1"><label class="form-check-label" for="ingredientes_17">Modificadores Reológicos</label></div>
+                    </div>
+                </div>
+                <div class="form-row mb-4 pl-md-4">
+                    <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="embalagens" formControlName="embalagens" value="link"><label class="form-check-label" for="embalagens">Embalagens</label></div>
+                    <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': companyDataFormGroup.get('embalagens').value === true}">
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="embalagens_1" formControlName="embalagens_1" value="1"><label class="form-check-label" for="embalagens_1">Vidro</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="embalagens_2" formControlName="embalagens_2" value="1"><label class="form-check-label" for="embalagens_2">Plastico</label></div>
+                    </div>
+                </div>
+                <div class="form-row mb-4 pl-md-4">
+                    <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="servicos" formControlName="servicos" value="link"><label class="form-check-label" for="servicos">Serviços de Pesquisa Clínica e Laboratorial</label></div>
+                </div>
+                <div class="form-row mb-4 pl-md-4">
+                    <div class="form-group col-12"><input class="form-check-input" type="checkbox" id="acessorios" formControlName="acessorios" value="link"><label class="form-check-label" for="acessorios">Acessórios e equipamentos de beleza</label></div>
+                    <div class="row sub-category w-100 d-none" [ngClass]="{'d-flex': companyDataFormGroup.get('acessorios').value === true}">
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_1" formControlName="acessorios_1" value="1"><label class="form-check-label" for="acessorios_1">Material promocional</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_2" formControlName="acessorios_2" value="1"><label class="form-check-label" for="acessorios_2">Mobiliário</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_3" formControlName="acessorios_3" value="1"><label class="form-check-label" for="acessorios_3">Equipamentos</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_4" formControlName="acessorios_4" value="1"><label class="form-check-label" for="acessorios_4">Catálogo</label></div>
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="acessorios_5" formControlName="acessorios_5" value="1"><label class="form-check-label" for="acessorios_5">Acessórios de beleza</label></div>
+                    </div>
+                </div>
+
+                <h4 class="pb-3">Países para onde exporta</h4>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <div class="form-group col-12 col-sm-6 col-md-4 fc"><input class="form-check-input" type="checkbox" id="nao_exporta" formControlName="nao_exporta" value="1"><label class="form-check-label" for="nao_exporta">Ainda não exporta</label></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="exporta">Escolha um ou mais países</label>
+                        <ng-select
+                                [items]="paises"
+                                [multiple]="true"
+                                bindLabel="pais"
+                                bindValue="iso"
+                                labelForId="exporta"
+                                formControlName="exporta">
+
+                            <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                                <span class="ng-value-label"><img [src]="'./assets/images/flags/' + item.iso.toLowerCase() + '.png'" width="20px" height="15px"> {{item.pais}}</span>
+                                <span class="ng-value-icon right" (click)="clear(item)" aria-hidden="true">×</span>
+                            </ng-template>
+
+                            <ng-template ng-option-tmp let-item="item">
+                                <img [src]="'./assets/images/flags/' + item.iso.toLowerCase() + '.png'" width="20px" height="15px"> {{item.pais}}
+                            </ng-template>
+                        </ng-select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12 text-center mt-5">
+                        <button type="submit" class="btn btn-lg btn-primary px-5" [disabled]="companyDataFormGroup.invalid">Enviar</button>
+                    </div>
+                </div>
+                <!--
+                {{companyDataFormGroup.status}}
+                {{findInvalidControls()}}
+                -->
+            </form>
+        </div>
+    </div>
+</div>
