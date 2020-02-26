@@ -91,7 +91,7 @@ var MercadoModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container white\">\n  <div class=\"row noticias\">\n    <div class=\"col-12 my-5\">\n      <h2>\n        Notícias do mercado\n      </h2>\n      <h3>Leia as útimas noícias exclusivas para você!</h3><a class=\"download-link\" #downloadLink></a>\n      <div class=\"mt-4\"><a href=\"https://www.dropbox.com/sh/v9wibfjentwgho0/AAAptJmblRp1VCcgP62AM6Ifa?dl=0\" target=\"_blank\">Clique aqui para visualizar as informações de Inteligência de Mercado.</a></div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container white\">\r\n  <div class=\"row noticias\">\r\n    <div class=\"col-12 my-5\">\r\n      <h2>\r\n        Notícias do mercado\r\n      </h2>\r\n      <h3>Leia as útimas noícias exclusivas para você!</h3><a class=\"download-link\" #downloadLink></a>\r\n      <div class=\"mt-4\"><a href=\"https://www.dropbox.com/sh/v9wibfjentwgho0/AAAptJmblRp1VCcgP62AM6Ifa?dl=0\" target=\"_blank\">Clique aqui para visualizar as informações de Inteligência de Mercado.</a></div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
