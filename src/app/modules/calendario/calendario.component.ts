@@ -14,7 +14,7 @@ export class CalendarioComponent implements OnInit {
   public mesTxt:String = this.nomeMeses[this.mesAtual] + '/' + this.diaUm.getFullYear();
   public semanas:any[] = [];
   public eventos:any[] = [
-    
+
     {
       mesAno:"11/2019",
       eventos:[
@@ -109,22 +109,6 @@ export class CalendarioComponent implements OnInit {
           finalidade de apresentar a estratégia, forma de atuação, próximas ações e como
           participar deste Projeto Setorial, e também uma introdução à ABIHPEC e suas áreas
           de trabalho.`
-        },
-        {
-          titulo: "FEIRA COSMOPROF / COSMOPRIME / COSMOPACK - BOLOGNA",
-          dias: [12,13,14,15,16],
-          tipo:'Evento',
-          show:false,
-          texto:`Evento voltado
-          para empresas do setor HPPC (Higiene Pessoal, Perfumaria e
-          Cosméticos). Considerado como o evento de HPPC mais importante do mundo, que
-          terá a sua 53ª edição em 2020, atrai grande número de visitantes de todos os
-          continentes, além de contar com representantes de todos os principais concorrentes
-          brasileiros no mundo (70 países estão presentes no evento). Não há hoje nenhum
-          outro evento de tamanha relevância em toda Europa como este. A partir de 2015, a
-          estratégia de participação neste evento foi ajustada de acordo com a necessidade
-          das empresas: separação de grupos por categorias de produtos, conforme
-          distribuição dos pavilhões do evento (setorização).`
         },
         {
           titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
@@ -235,6 +219,22 @@ export class CalendarioComponent implements OnInit {
           finalidade de apresentar a estratégia, forma de atuação, próximas ações e como
           participar deste Projeto Setorial, e também uma introdução à ABIHPEC e suas áreas
           de trabalho.`
+        },
+        {
+          titulo: "FEIRA COSMOPROF / COSMOPRIME / COSMOPACK - BOLOGNA",
+          dias: [11,12,13,14,15],
+          tipo:'Evento',
+          show:false,
+          texto:`Evento voltado
+          para empresas do setor HPPC (Higiene Pessoal, Perfumaria e
+          Cosméticos). Considerado como o evento de HPPC mais importante do mundo, que
+          terá a sua 53ª edição em 2020, atrai grande número de visitantes de todos os
+          continentes, além de contar com representantes de todos os principais concorrentes
+          brasileiros no mundo (70 países estão presentes no evento). Não há hoje nenhum
+          outro evento de tamanha relevância em toda Europa como este. A partir de 2015, a
+          estratégia de participação neste evento foi ajustada de acordo com a necessidade
+          das empresas: separação de grupos por categorias de produtos, conforme
+          distribuição dos pavilhões do evento (setorização).`
         },
         {
           titulo: "WORKSHOP ÁFRICA DO SUL - São Paulo",
@@ -421,7 +421,7 @@ export class CalendarioComponent implements OnInit {
   public montaCalendario(){
     this.eventosMes = [];
     let mesAno = ((this.mesAtual+1) < 10?'0'+(this.mesAtual+1):(this.mesAtual+1)) + '/'+this.diaUm.getFullYear();
-    this.eventos.forEach(lista =>{     
+    this.eventos.forEach(lista =>{
       if(lista.mesAno == mesAno){
         this.eventosMes = lista.eventos;
       }
@@ -436,20 +436,20 @@ export class CalendarioComponent implements OnInit {
           }else{
             dias.push({dia:null});
           }
-          
+
           this.diaUm = new Date(this.diaUm.setDate(this.diaUm.getDate()+1));
         }else{
           dias.push({dia:null});
         }
       }
       this.semanas.push(dias);
-      
+
       if(this.diaUm.getMonth() != this.mesAtual){
         break;
       }
     }
     console.log(this.eventosMes);
-    
+
   }
 
   public changeMounth(n:number):void{

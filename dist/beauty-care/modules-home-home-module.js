@@ -13,7 +13,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _pages_institucional_institucional_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/institucional/institucional.component */ "./src/app/modules/home/pages/institucional/institucional.component.ts");
-/* harmony import */ var _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/inicial/inicial.component */ "./src/app/modules/home/pages/inicial/inicial.component.ts");
+/* harmony import */ var _pages_sobre_sobre_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/sobre/sobre.component */ "./src/app/modules/home/pages/sobre/sobre.component.ts");
+/* harmony import */ var _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/inicial/inicial.component */ "./src/app/modules/home/pages/inicial/inicial.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -24,9 +25,11 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
-    { path: '', component: _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_3__["InicialComponent"] },
+    { path: '', component: _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_4__["InicialComponent"] },
     { path: 'institucional', component: _pages_institucional_institucional_component__WEBPACK_IMPORTED_MODULE_2__["InstitucionalComponent"] },
+    { path: 'sobre', component: _pages_sobre_sobre_component__WEBPACK_IMPORTED_MODULE_3__["SobreComponent"] },
 ];
 var HomeRoutingModule = /** @class */ (function () {
     function HomeRoutingModule() {
@@ -61,13 +64,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home-routing.module */ "./src/app/modules/home/home-routing.module.ts");
 /* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/modules/home/pages/home/home.component.ts");
 /* harmony import */ var _pages_institucional_institucional_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/institucional/institucional.component */ "./src/app/modules/home/pages/institucional/institucional.component.ts");
-/* harmony import */ var _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/inicial/inicial.component */ "./src/app/modules/home/pages/inicial/inicial.component.ts");
+/* harmony import */ var _pages_sobre_sobre_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/sobre/sobre.component */ "./src/app/modules/home/pages/sobre/sobre.component.ts");
+/* harmony import */ var _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/inicial/inicial.component */ "./src/app/modules/home/pages/inicial/inicial.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -87,7 +92,7 @@ var HomeModule = /** @class */ (function () {
                 angular_truncate_pipes__WEBPACK_IMPORTED_MODULE_2__["TruncatePipesModule"],
                 _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]
             ],
-            declarations: [_pages_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _pages_institucional_institucional_component__WEBPACK_IMPORTED_MODULE_6__["InstitucionalComponent"], _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_7__["InicialComponent"]]
+            declarations: [_pages_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _pages_institucional_institucional_component__WEBPACK_IMPORTED_MODULE_6__["InstitucionalComponent"], _pages_sobre_sobre_component__WEBPACK_IMPORTED_MODULE_7__["SobreComponent"], _pages_inicial_inicial_component__WEBPACK_IMPORTED_MODULE_8__["InicialComponent"]]
         })
     ], HomeModule);
     return HomeModule;
@@ -272,7 +277,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"banner col-12\" >\r\n      <!-- <img class=\"d-block w-100\" src=\"assets/images/banners/abihpec.png\" *ngIf=\"banner[0]\"  @fadeInOut> -->\r\n      <a href=\"http://beautycarebrazil.org.br/Circular_RoadShow_Af_do_Sul_2020.pdf\" target=\"_blank\"><img class=\"d-block w-100\" src=\"assets/images/banners/bannerroadshow.png\"  *ngIf=\"banner[0]\"  @fadeInOut></a>\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/banneralterado2_.jpg\" *ngIf=\"banner[1]\"  @fadeInOut>\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/bannerincosmetcisglobal_.jpg\" *ngIf=\"banner[2]\"  @fadeInOut>\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/banner.jpg\" *ngIf=\"banner[3]\"  @fadeInOut>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-1\"></div>\r\n    <div class=\"col-6\">\r\n      <div class=\"col-12 titulopainel\"><b>Painéis</b> Interativos</div>\r\n      <div class=\"col-12 backgroundpainel\">\r\n        <a href=\"javascript:void\" routerLink=\"/paineis\">+ Veja nosso relatório completo</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-4\">\r\n        <table class=\"calendario\" >\r\n            <thead>\r\n              <tr>\r\n                <th colspan=\"7\">{{mesTxt}}</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr class=\"weekday\">\r\n                <td class=\"fds\">Dom</td>\r\n                <td>Seg</td>\r\n                <td>Ter</td>\r\n                <td>Qua</td>\r\n                <td>Qui</td>\r\n                <td>Sex</td>\r\n                <td class=\"fds\">Sáb</td>\r\n              </tr>\r\n              <ng-container *ngIf=\"semanas.length == 0\">\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp;</td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\">  &nbsp;</td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp; </td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp; </td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp; </td>\r\n                </tr>\r\n              </ng-container>\r\n              <tr *ngFor=\"let dias of semanas;\"  routerLink=\"/calendario\">\r\n                <td *ngFor=\"let dia of dias;let i = index\" class=\"{{i==0||i==6?'fds':''}}  {{dia.dateEvent?'diaEvento':''}}\">{{dia.dia}}</td>\r\n              </tr>\r\n            </tbody>\r\n          </table>\r\n    </div>\r\n    <div class=\"col-1\"></div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- <ngb-carousel *ngIf=\"images\">\r\n  <ng-template ngbSlide>\r\n    <div class=\"picsum-img-wrapper\">\r\n      <img [src]=\"images[0]\" alt=\"Random first slide\">\r\n    </div>\r\n    <div class=\"carousel-caption\">\r\n      <h3>First slide label</h3>\r\n      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>\r\n    </div>\r\n  </ng-template>\r\n  <ng-template ngbSlide>\r\n    <div class=\"picsum-img-wrapper\">\r\n      <img [src]=\"images[1]\" alt=\"Random second slide\">\r\n    </div>\r\n    <div class=\"carousel-caption\">\r\n      <h3>Second slide label</h3>\r\n      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n    </div>\r\n  </ng-template>\r\n  <ng-template ngbSlide>\r\n    <div class=\"picsum-img-wrapper\">\r\n      <img [src]=\"images[2]\" alt=\"Random third slide\">\r\n    </div>\r\n    <div class=\"carousel-caption\">\r\n      <h3>Third slide label</h3>\r\n      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>\r\n    </div>\r\n  </ng-template>\r\n</ngb-carousel> -->\r\n<!--\r\n -->\r\n\r\n<!-- <carousel>\r\n  <slide>\r\n    <img src=\"assets/images/banners/bannercosmoproflasvegas_.jpg\" alt=\"first slide\" style=\"display: block; width: 100%;\">\r\n  </slide>\r\n  <slide>\r\n    <img src=\"assets/images/banners/banneralterado2_.jpg\" alt=\"second slide\" style=\"display: block; width: 100%;\">\r\n  </slide>\r\n  <slide>\r\n    <img src=\"assets/images/banners/bannerincosmetcisglobal_.jpg\" alt=\"third slide\" style=\"display: block; width: 100%;\">\r\n  </slide>\r\n</carousel> -->\r\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"banner col-12\" >\r\n      <!-- <img class=\"d-block w-100\" src=\"assets/images/banners/abihpec.png\" *ngIf=\"banner[0]\"  @fadeInOut> -->\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/feira-adiada.png\" *ngIf=\"banner[0]\"  @fadeInOut>\r\n      <a href=\"http://beautycarebrazil.org.br/Circular_RoadShow_Af_do_Sul_2020.pdf\" target=\"_blank\"><img class=\"d-block w-100\" src=\"assets/images/banners/bannerroadshow.png\"  *ngIf=\"banner[1]\"  @fadeInOut></a>\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/banneralterado2_.jpg\" *ngIf=\"banner[2]\"  @fadeInOut>\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/bannerincosmetcisglobal_.jpg\" *ngIf=\"banner[3]\"  @fadeInOut>\r\n      <img class=\"d-block w-100\" src=\"assets/images/banners/banner.jpg\" *ngIf=\"banner[4]\"  @fadeInOut>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-1\"></div>\r\n    <div class=\"col-6\">\r\n      <div class=\"col-12 titulopainel\"><b>Painéis</b> Interativos</div>\r\n      <div class=\"col-12 backgroundpainel\">\r\n        <a href=\"javascript:void\" routerLink=\"/paineis\">+ Veja nosso relatório completo</a>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-4\">\r\n        <table class=\"calendario\" >\r\n            <thead>\r\n              <tr>\r\n                <th colspan=\"7\">{{mesTxt}}</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr class=\"weekday\">\r\n                <td class=\"fds\">Dom</td>\r\n                <td>Seg</td>\r\n                <td>Ter</td>\r\n                <td>Qua</td>\r\n                <td>Qui</td>\r\n                <td>Sex</td>\r\n                <td class=\"fds\">Sáb</td>\r\n              </tr>\r\n              <ng-container *ngIf=\"semanas.length == 0\">\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp;</td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\">  &nbsp;</td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp; </td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp; </td>\r\n                </tr>\r\n                <tr>\r\n                  <td colspan=\"7\"> &nbsp; </td>\r\n                </tr>\r\n              </ng-container>\r\n              <tr *ngFor=\"let dias of semanas;\"  routerLink=\"/calendario\">\r\n                <td *ngFor=\"let dia of dias;let i = index\" class=\"{{i==0||i==6?'fds':''}}  {{dia.dateEvent?'diaEvento':''}}\">{{dia.dia}}</td>\r\n              </tr>\r\n            </tbody>\r\n          </table>\r\n    </div>\r\n    <div class=\"col-1\"></div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- <ngb-carousel *ngIf=\"images\">\r\n  <ng-template ngbSlide>\r\n    <div class=\"picsum-img-wrapper\">\r\n      <img [src]=\"images[0]\" alt=\"Random first slide\">\r\n    </div>\r\n    <div class=\"carousel-caption\">\r\n      <h3>First slide label</h3>\r\n      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>\r\n    </div>\r\n  </ng-template>\r\n  <ng-template ngbSlide>\r\n    <div class=\"picsum-img-wrapper\">\r\n      <img [src]=\"images[1]\" alt=\"Random second slide\">\r\n    </div>\r\n    <div class=\"carousel-caption\">\r\n      <h3>Second slide label</h3>\r\n      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n    </div>\r\n  </ng-template>\r\n  <ng-template ngbSlide>\r\n    <div class=\"picsum-img-wrapper\">\r\n      <img [src]=\"images[2]\" alt=\"Random third slide\">\r\n    </div>\r\n    <div class=\"carousel-caption\">\r\n      <h3>Third slide label</h3>\r\n      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>\r\n    </div>\r\n  </ng-template>\r\n</ngb-carousel> -->\r\n<!--\r\n -->\r\n\r\n<!-- <carousel>\r\n  <slide>\r\n    <img src=\"assets/images/banners/bannercosmoproflasvegas_.jpg\" alt=\"first slide\" style=\"display: block; width: 100%;\">\r\n  </slide>\r\n  <slide>\r\n    <img src=\"assets/images/banners/banneralterado2_.jpg\" alt=\"second slide\" style=\"display: block; width: 100%;\">\r\n  </slide>\r\n  <slide>\r\n    <img src=\"assets/images/banners/bannerincosmetcisglobal_.jpg\" alt=\"third slide\" style=\"display: block; width: 100%;\">\r\n  </slide>\r\n</carousel> -->\r\n"
 
 /***/ }),
 
@@ -698,6 +703,69 @@ var InstitucionalComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], InstitucionalComponent);
     return InstitucionalComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/modules/home/pages/sobre/sobre.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/modules/home/pages/sobre/sobre.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Sobre o projeto</h1>\r\n<div  class=\"p\">\r\n  Trata-se de um programa dinâmico, com estratégias voltadas ao atendimento e benefício do grupo de empresas participantes, com foco no mercado internacional.\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Este trabalho inclui desde o planejamento, estratégia e mercados-alvo, até a definição quanto ao formato de apoio, calendário de ações e eventos do projeto, onde contamos com a participação e contribuição de todos os integrantes do grupo e, posteriormente, definições que são tomadas por um Comitê Gestor, que é composto por 10 empresas participantes, gerente e gestor de projeto - de acordo com o Manual de convênios da Apex-Brasil.\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  O acompanhamento e medição de resultados, é extremamente relevante para a operacionalização do projeto, possibilitando a avaliação frequente de metas, comportamento das exportações e possíveis interferências em cada mercado-alvo do projeto, possibilitando frequente validação dos eventos planejadas, assim como a aplicação de melhorias e ajuste de ações.\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  A ABIHPEC desenvolveu uma estrutura voltada exclusivamente para as atividades de promoção internacional. Assim, todas as empresas participantes poderão se beneficiar das atividades nacionais e/ou internacionais do projeto setorial, de acordo com o seu enquadramento no nível de segmentação do projeto, que define benefícios e critérios de acesso às ações e eventos do projeto, de acordo com a maturidade e competências internacionais.\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Empresas associadas ou não à ABIHPEC;\r\n  Empresas segmentadas de acordo com a política do projeto setorial.\r\n\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Empresas brasileiras que compõem a cadeia produtiva do segmento de higiene pessoal, perfumaria e cosméticos, separadas em 3 diferentes verticais:\r\n\r\n  Produtos acabados - empresas detentoras de produtos finais;\r\n\r\n  Insumos - ingredientes, embalagens e serviços laboratoriais;\r\n\r\n  Acessórios - equipamentos, mobília, acessórios para salões de cabelereiros, produtos de beleza e afins. \r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Todas as informações estão descritas no documento completo do Projeto setorial Beautycare Brazil 2017-2019\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Termo de adesão Apex-Brasil (link para documento)\r\n\r\n  Condições gerais ABIHPEC (link para documento)\r\n  CNPJ (enviar print da tela RFB)\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Para maiores informações, contate a nossa equipe.\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Desconto para participação em ações e eventos do projeto;\r\n  Apoio nas diversas áreas de atuação da entidade, além do projeto setorial\r\n</div>\r\n\r\n<div  class=\"p\">\r\n  Passo-a-passo:\r\n  1º passo: Entrega de documentos para participação do projeto para beautycarebrazil@abihpec.org.br\r\n\r\n\r\n  2º passo: A empresa deverá optar pela filiação ou não à ABIHPEC;\r\n\r\n  3º passo: Pagamento de taxa de anuidade do projeto setorial*\r\n  4º passo: Entrega de ficha cadastral para segmentação de empresas \r\n\r\n  Informações específicas por evento serão disponibilizadas em circulares e por meios eletrônicos. \r\n</div>\r\n<div  class=\"p\">Clique aqui e saiba sobre o processo de segmentação.</div>\r\n<div  class=\"p\">*Clique aqui e saiba os valores vigentes para contribuição anual e taxas de inscrições para participação em ações e eventos do projeto.</div>\r\n<div  class=\"p\">Passo-a-passo:\r\n  1º passo: Entrega de documentos para participação do projeto para beautycarebrazil@abihpec.org.br\r\n\r\n  2º passo: A empresa deverá optar pela filiação ou não à ABIHPEC;\r\n\r\n  3º passo: Pagamento de taxa de anuidade do projeto setorial*\r\n  4º passo: Entrega de ficha cadastral para segmentação de empresas \r\n\r\n  Informações específicas por evento serão disponibilizadas em circulares e por meios eletrônicos. \r\n\r\n</div>\r\n<div  class=\"p\">Trata-se de um programa dinâmico, com estratégias voltadas ao atendimento e benefício do grupo de empresas participantes, com foco no mercado internacional.\r\n\r\n  Este trabalho inclui desde o planejamento, estratégia e mercados-alvo, até a definição quanto ao formato de apoio, calendário de ações e eventos do projeto, onde contamos com a participação e contribuição de todos os integrantes do grupo e, posteriormente, definições que são tomadas por um Comitê Gestor, que é composto por 10 empresas participantes, gerente e gestor de projeto - de acordo com o Manual de convênios da Apex-Brasil.\r\n\r\n  O acompanhamento e medição de resultados, é extremamente relevante para a operacionalização do projeto, possibilitando a avaliação frequente de metas, comportamento das exportações e possíveis interferências em cada mercado-alvo do projeto, possibilitando frequente validação dos eventos planejadas, assim como a aplicação de melhorias e ajuste de ações.\r\n\r\n  A ABIHPEC desenvolveu uma estrutura voltada exclusivamente para as atividades de promoção internacional. Assim, todas as empresas participantes poderão se beneficiar das atividades nacionais e/ou internacionais do projeto setorial, de acordo com o seu enquadramento no nível de segmentação do projeto, que define benefícios e critérios de acesso às ações e eventos do projeto, de acordo com a maturidade e competências internacionais.\r\n\r\n\r\n</div>\r\n<div  class=\"p\">\r\n\r\n  Termo de adesão Apex-Brasil (link para documento)\r\n\r\n  Condições gerais ABIHPEC (link para documento)\r\n  CNPJ (enviar print da tela RFB)\r\n\r\n</div>\r\n<div  class=\"p\">*Clique aqui e saiba os valores vigentes para contribuição anual e taxas de inscrições para participação em ações e eventos do projeto.</div>\r\n<div  class=\"p\">Clique aqui e saiba sobre o processo de segmentação.</div>\r\n<div  class=\"p\">Para maiores informações, contate a nossa equipe.</div>\r\n<div  class=\"p\">Todas as informações estão descritas no documento completo do Projeto setorial Beautycare Brazil 2017-2019.\r\n</div>\r\n<div  class=\"p\">Passo-a-passo:\r\n  1º passo:\r\n\r\n\r\n  2º passo: A empresa deverá optar pela filiação ou não à ABIHPEC;\r\n\r\n  3º passo: Pagamento de taxa de anuidade do projeto setorial*\r\n  4º passo: Entrega de ficha cadastral para segmentação de empresas \r\n\r\n\r\n\r\n\r\n\r\n\r\n  Informações específicas por evento serão disponibilizadas em circulares e por meios eletrônicos. \r\n\r\n</div>\r\n<div  class=\"p\">Empresas associadas ou não à ABIHPEC;\r\n\r\n  Empresas segmentadas de acordo com a política do projeto setorial.\r\n\r\n</div>\r\n<div  class=\"p\">Passo-a-passo:\r\n  1º passo: Entrega de documentos para participação do projeto para beautycarebrazil@abihpec.org.br\r\n\r\n<br><br>\r\n\r\n  2º passo: A empresa deverá optar pela filiação ou não à ABIHPEC;\r\n<br><br>\r\n  3º passo: Pagamento de taxa de anuidade do projeto setorial*<br><br>\r\n  4º passo: Entrega de ficha cadastral para segmentação de empresas <br><br>\r\n  Informações específicas por evento serão disponibilizadas em circulares e por meios eletrônicos. \r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/home/pages/sobre/sobre.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/modules/home/pages/sobre/sobre.component.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div.p {\n  margin: 20px 169px;\n  font-family: \"Encode Sans\";\n  font-size: 16px; }\n\nh1 {\n  margin-left: 100px;\n  font-family: \"Encode Sans\";\n  text-transform: uppercase;\n  font-weight: bold;\n  color: #026a82; }\n\nh4 {\n  margin-left: 100px;\n  font-family: \"Encode Sans\";\n  color: #026a82 !important; }\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/home/pages/sobre/sobre.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/modules/home/pages/sobre/sobre.component.ts ***!
+  \*************************************************************/
+/*! exports provided: SobreComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SobreComponent", function() { return SobreComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SobreComponent = /** @class */ (function () {
+    function SobreComponent() {
+    }
+    SobreComponent.prototype.ngOnInit = function () {
+    };
+    SobreComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-sobre',
+            template: __webpack_require__(/*! ./sobre.component.html */ "./src/app/modules/home/pages/sobre/sobre.component.html"),
+            styles: [__webpack_require__(/*! ./sobre.component.scss */ "./src/app/modules/home/pages/sobre/sobre.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SobreComponent);
+    return SobreComponent;
 }());
 
 

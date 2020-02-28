@@ -780,13 +780,6 @@ var CalendarioComponent = /** @class */ (function () {
                         texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
-                        titulo: "FEIRA COSMOPROF / COSMOPRIME / COSMOPACK - BOLOGNA",
-                        dias: [12, 13, 14, 15, 16],
-                        tipo: 'Evento',
-                        show: false,
-                        texto: "Evento voltado\n          para empresas do setor HPPC (Higiene Pessoal, Perfumaria e\n          Cosm\u00E9ticos).\u00A0Considerado como o evento de HPPC mais importante do mundo, que\n          ter\u00E1 a sua 53\u00AA edi\u00E7\u00E3o em 2020, atrai grande n\u00FAmero de visitantes de todos os\n          continentes, al\u00E9m de contar com representantes de todos os principais concorrentes\n          brasileiros no mundo (70 pa\u00EDses est\u00E3o presentes no evento). N\u00E3o h\u00E1 hoje nenhum\n          outro evento de tamanha relev\u00E2ncia em toda Europa como este. A partir de 2015, a\n          estrat\u00E9gia de participa\u00E7\u00E3o neste evento foi ajustada de acordo com a necessidade\n          das empresas: separa\u00E7\u00E3o de grupos por categorias de produtos, conforme\n          distribui\u00E7\u00E3o dos pavilh\u00F5es do evento (setoriza\u00E7\u00E3o)."
-                    },
-                    {
                         titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
                         dias: [31],
                         tipo: 'Evento',
@@ -874,6 +867,13 @@ var CalendarioComponent = /** @class */ (function () {
                         tipo: 'Evento',
                         show: false,
                         texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
+                    },
+                    {
+                        titulo: "FEIRA COSMOPROF / COSMOPRIME / COSMOPACK - BOLOGNA",
+                        dias: [11, 12, 13, 14, 15],
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado\n          para empresas do setor HPPC (Higiene Pessoal, Perfumaria e\n          Cosm\u00E9ticos).\u00A0Considerado como o evento de HPPC mais importante do mundo, que\n          ter\u00E1 a sua 53\u00AA edi\u00E7\u00E3o em 2020, atrai grande n\u00FAmero de visitantes de todos os\n          continentes, al\u00E9m de contar com representantes de todos os principais concorrentes\n          brasileiros no mundo (70 pa\u00EDses est\u00E3o presentes no evento). N\u00E3o h\u00E1 hoje nenhum\n          outro evento de tamanha relev\u00E2ncia em toda Europa como este. A partir de 2015, a\n          estrat\u00E9gia de participa\u00E7\u00E3o neste evento foi ajustada de acordo com a necessidade\n          das empresas: separa\u00E7\u00E3o de grupos por categorias de produtos, conforme\n          distribui\u00E7\u00E3o dos pavilh\u00F5es do evento (setoriza\u00E7\u00E3o)."
                     },
                     {
                         titulo: "WORKSHOP ÁFRICA DO SUL - São Paulo",

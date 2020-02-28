@@ -6,6 +6,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { InstitucionalComponent } from './pages/institucional/institucional.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 import { InicialComponent } from './pages/inicial/inicial.component';
 
 @NgModule({
@@ -15,6 +16,6 @@ import { InicialComponent } from './pages/inicial/inicial.component';
         TruncatePipesModule,
         SharedModule
     ],
-    declarations: [HomeComponent, InstitucionalComponent, InicialComponent]
+    declarations: [HomeComponent, InstitucionalComponent, SobreComponent, InicialComponent]
 })
 export class HomeModule {}
