@@ -332,7 +332,9 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [11],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     }
                 ]
             },
@@ -342,12 +344,16 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [3],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "REUNIÃO COMITÊ GESTOR - São Paulo",
                         dias: [5],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Reuni\u00E3o para apresenta\u00E7\u00E3o de\n          Resultados e Defini\u00E7\u00E3o de estrat\u00E9gias do projeto Beautycare Brazil."
                     }
                 ]
             },
@@ -357,7 +363,9 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "WORKSHOP EUROPA - São Paulo",
                         dias: [31],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     }
                 ]
             },
@@ -367,12 +375,16 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [5],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "WORKSHOP EMIRADOS ÁRABES - São Paulo",
                         dias: [17],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     }
                 ]
             },
@@ -382,17 +394,17 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [4],
-                        tipo: 'Evento'
-                    },
-                    {
-                        titulo: "FEIRA COSMOPROF / COSMOPRIME / COSMOPACK - BOLOGNA",
-                        dias: [12, 13, 14, 15, 16],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
                         dias: [31],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        textDays: '31 - 1, 2',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
                     }
                 ]
             },
@@ -402,17 +414,24 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
                         dias: [1, 2],
-                        tipo: 'Evento'
+                        textDays: '31 - 1, 2',
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
                     },
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [7],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "WORKSHOP EUA - São Paulo",
                         dias: [28],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     },
                 ]
             },
@@ -422,22 +441,31 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [5],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "REUNIÃO COMITÊ GESTOR - São Paulo",
                         dias: [7],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Reuni\u00E3o para apresenta\u00E7\u00E3o de\n          Resultados e Defini\u00E7\u00E3o de estrat\u00E9gias do projeto Beautycare Brazil."
                     },
                     {
                         titulo: "WORKSHOP MÉXICO - São Paulo",
                         dias: [11],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     },
                     {
                         titulo: "FEIRA BEAUTYWORLD MIDDLE EAST - DUABI",
                         dias: [31],
-                        tipo: 'Evento'
+                        textDays: '31 - 1, 2',
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC ( Higiene Pessoal, Perfumaria e Cosm\u00E9ticos). O setor participa desta feira desde o ano 2003, obtendo excelentes resultados de exporta\u00E7\u00E3o para pa\u00EDses do Oriente M\u00E9dio e Norte da \u00C1frica (MENA - Middle East and North Africa). Dubai \u00E9 um mercado que funciona como plataforma de expans\u00E3o para outros mercados do MENA, devido \u00E0 sua influ\u00EAncia em outros pa\u00EDses, tornando esta feira a mais importante da regi\u00E3o.\u00A0 Por tamb\u00E9m ser reconhecido como um importante centro de distribui\u00E7\u00E3o mundial, por meio de suas zonas de livre com\u00E9rcio, Dubai possibilita a armazenagem e pulveriza\u00E7\u00E3o de produtos para diversos pa\u00EDses do mundo, facilitando as pequenas opera\u00E7\u00F5es e vendas brasileiras para mercados asi\u00E1ticos, que utilizam a proximidade geogr\u00E1fica do pa\u00EDs para agilizar a entrega e facilitar vendas de pequenos lotes, descentralizando a opera\u00E7\u00E3o com sa\u00EDda do Brasil. Sendo um evento realizado em Dubai, Emirado com regras e leis menos restritivas que muitos outros pa\u00EDses \u00C1rabes, o evento atrai visitantes de toda a regi\u00E3o e de muitos pa\u00EDses asi\u00E1ticos, al\u00E9m de outros continentes. Este evento est\u00E1 com a capacidade m\u00E1xima de expositores e a sa\u00EDda de um expositor \u00E9 praticamente condi\u00E7\u00E3o obrigat\u00F3ria para a entrada de um novo, tamanha import\u00E2ncia do evento. Os principais concorrentes mundiais do setor HPPC n\u00E3o s\u00F3 est\u00E3o presentes no evento, como tamb\u00E9m possuem grande representatividade em sua participa\u00E7\u00E3o (exemplo Turquia, que ocupa aproximadamente 2.000m2 no evento, com mais de 50 expositores)."
                     },
                 ]
             },
@@ -445,19 +473,33 @@ var InicialComponent = /** @class */ (function () {
                 mesAno: "06/2020",
                 eventos: [
                     {
-                        titulo: "FEIRA BEAUTYWORLD MIDDLE EAST - DUABI",
+                        titulo: "FEIRA BEAUTYWORLD MIDDLE EAST - DUBAI",
                         dias: [1, 2],
-                        tipo: 'Evento'
+                        textDays: '31 - 1, 2',
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC ( Higiene Pessoal, Perfumaria e Cosm\u00E9ticos). O setor participa desta feira desde o ano 2003, obtendo excelentes resultados de exporta\u00E7\u00E3o para pa\u00EDses do Oriente M\u00E9dio e Norte da \u00C1frica (MENA - Middle East and North Africa). Dubai \u00E9 um mercado que funciona como plataforma de expans\u00E3o para outros mercados do MENA, devido \u00E0 sua influ\u00EAncia em outros pa\u00EDses, tornando esta feira a mais importante da regi\u00E3o.\u00A0 Por tamb\u00E9m ser reconhecido como um importante centro de distribui\u00E7\u00E3o mundial, por meio de suas zonas de livre com\u00E9rcio, Dubai possibilita a armazenagem e pulveriza\u00E7\u00E3o de produtos para diversos pa\u00EDses do mundo, facilitando as pequenas opera\u00E7\u00F5es e vendas brasileiras para mercados asi\u00E1ticos, que utilizam a proximidade geogr\u00E1fica do pa\u00EDs para agilizar a entrega e facilitar vendas de pequenos lotes, descentralizando a opera\u00E7\u00E3o com sa\u00EDda do Brasil. Sendo um evento realizado em Dubai, Emirado com regras e leis menos restritivas que muitos outros pa\u00EDses \u00C1rabes, o evento atrai visitantes de toda a regi\u00E3o e de muitos pa\u00EDses asi\u00E1ticos, al\u00E9m de outros continentes. Este evento est\u00E1 com a capacidade m\u00E1xima de expositores e a sa\u00EDda de um expositor \u00E9 praticamente condi\u00E7\u00E3o obrigat\u00F3ria para a entrada de um novo, tamanha import\u00E2ncia do evento. Os principais concorrentes mundiais do setor HPPC n\u00E3o s\u00F3 est\u00E3o presentes no evento, como tamb\u00E9m possuem grande representatividade em sua participa\u00E7\u00E3o (exemplo Turquia, que ocupa aproximadamente 2.000m2 no evento, com mais de 50 expositores)."
                     },
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [8],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
+                    },
+                    {
+                        titulo: "FEIRA COSMOPROF / COSMOPRIME / COSMOPACK - BOLOGNA",
+                        dias: [11, 12, 13, 14, 15],
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado\n          para empresas do setor HPPC (Higiene Pessoal, Perfumaria e\n          Cosm\u00E9ticos).\u00A0Considerado como o evento de HPPC mais importante do mundo, que\n          ter\u00E1 a sua 53\u00AA edi\u00E7\u00E3o em 2020, atrai grande n\u00FAmero de visitantes de todos os\n          continentes, al\u00E9m de contar com representantes de todos os principais concorrentes\n          brasileiros no mundo (70 pa\u00EDses est\u00E3o presentes no evento). N\u00E3o h\u00E1 hoje nenhum\n          outro evento de tamanha relev\u00E2ncia em toda Europa como este. A partir de 2015, a\n          estrat\u00E9gia de participa\u00E7\u00E3o neste evento foi ajustada de acordo com a necessidade\n          das empresas: separa\u00E7\u00E3o de grupos por categorias de produtos, conforme\n          distribui\u00E7\u00E3o dos pavilh\u00F5es do evento (setoriza\u00E7\u00E3o)."
                     },
                     {
                         titulo: "WORKSHOP ÁFRICA DO SUL - São Paulo",
                         dias: [15],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     },
                 ]
             },
@@ -467,12 +509,16 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [6],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "ROAD SHOW MÉXICO - CIDADE DO MÉXICO",
                         dias: [20, 21, 22, 23],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Encontro entre as empresas participantes do projeto com potenciais compradores, nas instala\u00E7\u00F5es destes potenciais parceiros. O evento \u00E9 realizado ap\u00F3s o processo de levantamento de informa\u00E7\u00F5es no pa\u00EDs de destino e matchmaking entre fabricantes, distribuidores, importadores e as empresas brasileiras inscritas. Durante o evento, s\u00E3o realizadas reuni\u00F5es individuais por empresa participante e potenciais compradores em suas pr\u00F3prias instala\u00E7\u00F5es, em substitui\u00E7\u00E3o \u00E0 rodada de neg\u00F3cios usualmente realizada em hot\u00E9is. \u00C9 importante destacar que por se tratar de uma a\u00E7\u00E3o customizada de acordo com o perfil que a empresa brasileira busca no pa\u00EDs alvo, \u00E9 poss\u00EDvel atingir um maior n\u00FAmero de diferentes contatos comerciais pois todas as empresas locais poder\u00E3o selecionar, efetivamente, a empresa brasileira com maior similaridade \u00E0 sua estrat\u00E9gia, independente do setor, segmento ou vertical do projeto."
                     },
                 ]
             },
@@ -482,17 +528,23 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [11],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "WORKSHOP RÚSSIA - São Paulo",
                         dias: [18],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     },
                     {
                         titulo: "ROAD SHOW ÁFRICA DO SUL - ÁFRICA DO SUL",
                         dias: [24, 25, 26, 27],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Encontro entre as empresas participantes do projeto com potenciais compradores, nas instala\u00E7\u00F5es destes potenciais parceiros. O evento \u00E9 realizado ap\u00F3s o processo de levantamento de informa\u00E7\u00F5es no pa\u00EDs de destino e matchmaking entre fabricantes, distribuidores, importadores e as empresas brasileiras inscritas. Durante o evento, s\u00E3o realizadas reuni\u00F5es individuais por empresa participante e potenciais compradores em suas pr\u00F3prias instala\u00E7\u00F5es, em substitui\u00E7\u00E3o \u00E0 rodada de neg\u00F3cios usualmente realizada em hot\u00E9is. \u00C9 importante destacar que por se tratar de uma a\u00E7\u00E3o customizada de acordo com o perfil que a empresa brasileira busca no pa\u00EDs alvo, \u00E9 poss\u00EDvel atingir um maior n\u00FAmero de diferentes contatos comerciais pois todas as empresas locais poder\u00E3o selecionar, efetivamente, a empresa brasileira com maior similaridade \u00E0 sua estrat\u00E9gia, independente do setor, segmento ou vertical do projeto."
                     },
                 ]
             },
@@ -502,12 +554,16 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [2],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "WORKSHOP ÍNDIA - São Paulo",
                         dias: [16],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     }
                 ]
             },
@@ -517,17 +573,23 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [1],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "FEIRA IN-COSMETICS NORTH AMERICA - NOVA IORQUE",
                         dias: [21, 22],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC ( Higiene Pessoal, Perfumaria e Cosm\u00E9ticos). Em sua quinta edi\u00E7\u00E3o, este evento passou a ser realizado mediante \u00E0 extrema relev\u00E2ncia de empresas nacionais e internacionais ainda fabricantes no mercado americano, al\u00E9m de possuir muitos centros de decis\u00E3o de Marketing, Pesquisa e Desenvolvimento concentrados na regi\u00E3o onde a feira \u00E9 realizada, o que potencializa a busca tend\u00EAncias e inova\u00E7\u00F5es no mercado nesta feira pelo corpo diretivo ou decis\u00F3rio das empresas.\n          A exposi\u00E7\u00E3o re\u00FAne mais de 200 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 2.000 fabricantes de cosm\u00E9ticos. Como em todos os demais eventos com a marca \u201Cin-cosmetics\u201D, \u00E9 ainda disponibilizado pela organiza\u00E7\u00E3o uma \u00E1rea de apresenta\u00E7\u00E3o de testes cl\u00EDnicos e pesquisas laboratoriais dos ingredientes, assim como a empresa que possuir um lan\u00E7amento de produto que esteja h\u00E1 menos de 6 meses no mercado \u00E9 selecionada para a exposi\u00E7\u00E3o em \u00E1rea espec\u00EDfica de produtos inovadores."
                     },
                     {
                         titulo: "INTERCHARM PROFESSIONAL - MOSCOU",
                         dias: [28, 29, 30, 31],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC ( Higiene Pessoal, Perfumaria e Cosm\u00E9ticos). InterCharm \u00E9 a maior exposi\u00E7\u00E3o de perfumaria e cosm\u00E9ticos na R\u00FAssia, CIS, Europa Central e Oriental que re\u00FAne em Moscou, empresas russas e internacionais, novos fabricantes e distribuidores de perfumaria e cosm\u00E9ticos, ferramentas e equipamentos para cosmetologia, est\u00E9tica, medicina, cabeleireiro, servi\u00E7o de unhas, bem como tecnologias para o sal\u00E3o de beleza. O mercado russo de cosm\u00E9ticos \u00E9 um dos maiores do mundo e tem demonstrado constante crescimento a partir de 2016. Segundo Euromonitor, o volume do mercado russo de produtos de beleza em 2016 atingiu USD 10,5 bilh\u00F5es. Ao mesmo tempo mais de 70% dos produtos de beleza usados tanto pelo consumidor final como pelos sal\u00F5es de beleza s\u00E3o importados.\n          Apesar desse potencial, o mercado ainda \u00E9 praticamente inexplorado pelas empresas brasileiras. Alguns esfor\u00E7os pontuais foram desenvolvidos tanto pelo EA Eur\u00E1sia (vide hist\u00F3rico), como por algumas empresas individualmente. O objetivo estrat\u00E9gico deste projeto \u00E9 aumentar exporta\u00E7\u00F5es dos produtos de beleza brasileiros para o mercado russo e da regi\u00E3o euroasi\u00E1tica, bem como melhorar a imagem deste setor entre os importadores/distribuidores russos e os consumidores finais."
                     }
                 ]
             },
@@ -537,12 +599,16 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [4],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
                     },
                     {
                         titulo: "RODADA DE NEGÓCIOS ÍNDIA - DELHI",
                         dias: [16, 17, 18, 19],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: ""
                     }
                 ]
             },
@@ -552,12 +618,16 @@ var InicialComponent = /** @class */ (function () {
                     {
                         titulo: "REUNIÃO COMITÊ GESTOR - São Paulo",
                         dias: [2],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Reuni\u00E3o para apresenta\u00E7\u00E3o de\n          Resultados e Defini\u00E7\u00E3o de estrat\u00E9gias do projeto Beautycare Brazil."
                     },
                     {
                         titulo: "WORKSHOP EUROPA - São Paulo",
                         dias: [3],
-                        tipo: 'Evento'
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     }
                 ]
             },
