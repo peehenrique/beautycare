@@ -258,8 +258,8 @@ export class InicialComponent implements OnInit {
       eventos:[
         {
           titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
-          dias: [2],
-          textDays:'30 - 2',
+          dias: [1,2],
+          textDays:'30 - 1, 2',
           tipo:'Evento',
           show:false,
           texto:`Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosméticos). A feira in-cosmetics está consolidada como o principal evento para os fabricantes de matéria-prima do setor. Realizada anualmente em países diferentes da Europa, é um evento itinerante que a cada 3 anos retorna para a edição considerada como a principal realizada na Europa, na cidade de Paris.

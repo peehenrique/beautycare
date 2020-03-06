@@ -500,8 +500,8 @@ var InicialComponent = /** @class */ (function () {
                 eventos: [
                     {
                         titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
-                        dias: [2],
-                        textDays: '30 - 2',
+                        dias: [1, 2],
+                        textDays: '30 - 1, 2',
                         tipo: 'Evento',
                         show: false,
                         texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
