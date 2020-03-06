@@ -778,28 +778,12 @@ var CalendarioComponent = /** @class */ (function () {
                         tipo: 'Evento',
                         show: false,
                         texto: "O evento\n          destina-se \u00E0 empresas ainda n\u00E3o participantes do projeto Beautucare Brazil, com a\n          finalidade de apresentar a estrat\u00E9gia, forma de atua\u00E7\u00E3o, pr\u00F3ximas a\u00E7\u00F5es e como\n          participar deste Projeto Setorial, e tamb\u00E9m uma introdu\u00E7\u00E3o \u00E0 ABIHPEC e suas \u00E1reas\n          de trabalho."
-                    },
-                    {
-                        titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
-                        dias: [31],
-                        tipo: 'Evento',
-                        textDays: '31 - 1, 2',
-                        show: false,
-                        texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
                     }
                 ]
             },
             {
                 mesAno: "04/2020",
                 eventos: [
-                    {
-                        titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
-                        dias: [1, 2],
-                        textDays: '31 - 1, 2',
-                        tipo: 'Evento',
-                        show: false,
-                        texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
-                    },
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [7],
@@ -882,11 +866,27 @@ var CalendarioComponent = /** @class */ (function () {
                         show: false,
                         texto: "Workshops:\u00A0Apresenta\u00E7\u00E3o de informa\u00E7\u00F5es aprofundadas sobre\n          mercados direcionado ao segmento de beleza, para melhor compreens\u00E3o de\n          competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos\n          regulat\u00F3rias, acordos comerciais, h\u00E1bitos de consumo e dados de mercado."
                     },
+                    {
+                        titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
+                        dias: [30],
+                        tipo: 'Evento',
+                        textDays: '30 - 02',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
+                    }
                 ]
             },
             {
                 mesAno: "07/2020",
                 eventos: [
+                    {
+                        titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
+                        dias: [2],
+                        textDays: '30 - 2',
+                        tipo: 'Evento',
+                        show: false,
+                        texto: "Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosm\u00E9ticos).\u00A0A feira in-cosmetics est\u00E1 consolidada como o principal evento para os fabricantes de mat\u00E9ria-prima do setor. Realizada anualmente em pa\u00EDses diferentes da Europa, \u00E9 um evento itinerante que a cada 3 anos retorna para a edi\u00E7\u00E3o considerada como a principal realizada na Europa, na cidade de Paris.\n          O evento possui a\u00E7\u00F5es paralelas de foco educacional (semin\u00E1rio e workshops cient\u00EDficos), criando uma plataforma de neg\u00F3cios e de conhecimento dos novos ingredientes. A exposi\u00E7\u00E3o re\u00FAne mais de 800 expositores de ingredientes, fragr\u00E2ncias, equipamentos de laborat\u00F3rio, testes e solu\u00E7\u00F5es regulat\u00F3rias com at\u00E9 10.000 fabricantes de cosm\u00E9ticos em todo o mundo. \u00C9 a plataforma de lan\u00E7amento Global para inova\u00E7\u00E3o em ingredientes e tecnologias."
+                    },
                     {
                         titulo: "APRESENTAÇÃO PROJETO - São Paulo",
                         dias: [6],
@@ -2098,7 +2098,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\PEDRO\Downloads\beuaty\beautycare\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\PEDRO\Downloads\beautycare\src\main.ts */"./src/main.ts");
 
 
 /***/ })

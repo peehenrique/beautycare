@@ -123,30 +123,12 @@ export class InicialComponent implements OnInit {
           finalidade de apresentar a estratégia, forma de atuação, próximas ações e como
           participar deste Projeto Setorial, e também uma introdução à ABIHPEC e suas áreas
           de trabalho.`
-        },
-        {
-          titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
-          dias: [31],
-          tipo:'Evento',
-          textDays:'31 - 1, 2',
-          show:false,
-          texto:`Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosméticos). A feira in-cosmetics está consolidada como o principal evento para os fabricantes de matéria-prima do setor. Realizada anualmente em países diferentes da Europa, é um evento itinerante que a cada 3 anos retorna para a edição considerada como a principal realizada na Europa, na cidade de Paris.
-          O evento possui ações paralelas de foco educacional (seminário e workshops científicos), criando uma plataforma de negócios e de conhecimento dos novos ingredientes. A exposição reúne mais de 800 expositores de ingredientes, fragrâncias, equipamentos de laboratório, testes e soluções regulatórias com até 10.000 fabricantes de cosméticos em todo o mundo. É a plataforma de lançamento Global para inovação em ingredientes e tecnologias.`
         }
       ]
     },
     {
       mesAno:"04/2020",
       eventos:[
-        {
-          titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
-          dias: [1,2],
-          textDays:'31 - 1, 2',
-          tipo:'Evento',
-          show:false,
-          texto:`Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosméticos). A feira in-cosmetics está consolidada como o principal evento para os fabricantes de matéria-prima do setor. Realizada anualmente em países diferentes da Europa, é um evento itinerante que a cada 3 anos retorna para a edição considerada como a principal realizada na Europa, na cidade de Paris.
-          O evento possui ações paralelas de foco educacional (seminário e workshops científicos), criando uma plataforma de negócios e de conhecimento dos novos ingredientes. A exposição reúne mais de 800 expositores de ingredientes, fragrâncias, equipamentos de laboratório, testes e soluções regulatórias com até 10.000 fabricantes de cosméticos em todo o mundo. É a plataforma de lançamento Global para inovação em ingredientes e tecnologias.`
-        },
         {
           titulo: "APRESENTAÇÃO PROJETO - São Paulo",
           dias: [7],
@@ -260,11 +242,29 @@ export class InicialComponent implements OnInit {
           competitividade e oportunidades. Temas abordados: resultados do projeto, assuntos
           regulatórias, acordos comerciais, hábitos de consumo e dados de mercado.`
         },
+        {
+          titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
+          dias: [30],
+          tipo:'Evento',
+          textDays:'30 - 02',
+          show:false,
+          texto:`Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosméticos). A feira in-cosmetics está consolidada como o principal evento para os fabricantes de matéria-prima do setor. Realizada anualmente em países diferentes da Europa, é um evento itinerante que a cada 3 anos retorna para a edição considerada como a principal realizada na Europa, na cidade de Paris.
+          O evento possui ações paralelas de foco educacional (seminário e workshops científicos), criando uma plataforma de negócios e de conhecimento dos novos ingredientes. A exposição reúne mais de 800 expositores de ingredientes, fragrâncias, equipamentos de laboratório, testes e soluções regulatórias com até 10.000 fabricantes de cosméticos em todo o mundo. É a plataforma de lançamento Global para inovação em ingredientes e tecnologias.`
+        }
       ]
     },
     {
       mesAno:"07/2020",
       eventos:[
+        {
+          titulo: "FEIRA IN-COSMETICS GLOBAL - BARCELONA",
+          dias: [2],
+          textDays:'30 - 2',
+          tipo:'Evento',
+          show:false,
+          texto:`Evento voltado para empresas do setor HPPC (Higiene Pessoal, Perfumaria e Cosméticos). A feira in-cosmetics está consolidada como o principal evento para os fabricantes de matéria-prima do setor. Realizada anualmente em países diferentes da Europa, é um evento itinerante que a cada 3 anos retorna para a edição considerada como a principal realizada na Europa, na cidade de Paris.
+          O evento possui ações paralelas de foco educacional (seminário e workshops científicos), criando uma plataforma de negócios e de conhecimento dos novos ingredientes. A exposição reúne mais de 800 expositores de ingredientes, fragrâncias, equipamentos de laboratório, testes e soluções regulatórias com até 10.000 fabricantes de cosméticos em todo o mundo. É a plataforma de lançamento Global para inovação em ingredientes e tecnologias.`
+        },
         {
           titulo: "APRESENTAÇÃO PROJETO - São Paulo",
           dias: [6],
