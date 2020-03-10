@@ -9,6 +9,18 @@ export class NoticiasComponent implements OnInit {
 
   public noticias:any[] = [
     {
+      titulo: `<b>IN-COSMETICS GLOBAL 2020</b> TEM NOVA DATA: 30 DE JUNHO A 2 DE JULHO`,
+      cor:'orange',
+      show:false,
+      conteudo: `
+        <p align="center"><img src="assets/images/noticias/incosmetics.jpg" alt="" width="289" height="289"/></p>
+        <small>março 10,2019</small>
+        <p>A Reed Exhibitions, empresa organizadora da <b>in-cosmetics Global 2020</b> - maior feira de ingredientes voltados ao mercado de cosméticos - <b>anunciou o adiamento do evento para 30 junho a 2 de julho</b>, que antes seria realizado de 31 de março a 2 de abril, em Barcelona.</p>
+        <p>A decisão foi motivada pela crise do Coronavírus visando garantir segurança e qualidade de público visitante, uma vez que muitas empresas estão restringindo viagens ao exterior.</p>
+        <p><b> <a href="https://www.in-cosmetics.com/event-updates?utm_campaign=INCOS2020_Fulfillment_er_05_Mar_Announcement&utm_medium=email&utm_source=Fulfilment&queryToken=qik6QDV2AzAdZX4g%20e1tZ3hdyMzbyxGT4BSjhMT94X7x1zmnEzEVv5XKutd3ky3xYZJBFQcu7mPOb9q%2FPBxm1bVL1FFu4IXbFbmDwApFmaWuBx0T8ihahvclrnrF7iREsJUe0wJFCYlO48vr8%20%20myh6lJ6amy7jl6HrVniz7FvU%3D&CampaignId=7013z000001uKnKAAU&dkey=" target="_blank">Clique aqui</a> </b> para mais informações.</p>
+      `
+    },
+    {
       titulo: `<B>ABIHPEC</B> E <B>ITALCAM</B> ASSINARAM ACORDO PARA FORTALECER OS NEGÓCIOS INTERNACIONAIS ENTRE O BRASIL E A ITÁLIA`,
       cor:'red',
       show:false,
@@ -29,39 +41,39 @@ export class NoticiasComponent implements OnInit {
       conteudo: `
       <p>Abihpec marca presença na CPhl Wordwide, maior feira da cadeia industrial
       farmacêutica no mundo</p>
-      
+
       <p>A Abihpec (Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Co
       sméticos), em parceria com a Abiquifi (Associação Brasileira da Indústria de
       Insumos Farmacêuticos), participou da 30ª edição da CPhl Wordwide, entre os dias
       5 e 7 de novembro, em Frankfurt, na Alemanha, com a missão de possibilitar a
       geração de negócios para a cadeia produtiva que atua no fornecimento de insumos
       e empresas fabricantes de produtos acabados de ambos os setores.</p>
-      
+
       <p>Considerado o maior evento da cadeia industrial farmacêutica, a CPhl Worldwide
       recebeu cerca de 50 mil visitantes e registrou a maior participação brasileira desde
       2007, com a presença de 42 empresas – sendo 12 dessas estreantes, além do
       comparecimento de representantes do Governo Federal, como o Ministério da
       Saúde, Anvisa (Agência Nacional de Vigilância Sanitária) e o Instituto de Tecnologia
       em Fármacos (Farmanguinhos).</p>
-      
+
       <p>O Pavilhão Brasileiro – presente na feira há nove anos por meio do projeto setorial
       Brazilian Pharma &amp; Health – um convênio entre Abiquifi e Apex Brasil (Agência
       Brasileira de Promoção de Exportações e Investimentos), neste ano contou com a
       importante parceria do Beautycare Brazil, da Abihpec.</p>
-      
+
       <p>“Essa iniciativa marcou o início da cooperação entre as entidades e prevê a
       realização conjunta de ações internacionais e estudos de mercado com o principal
       objetivo de construir uma agenda positiva para ambos os segmentos e atuar em
       sinergia para fomentar as indústrias brasileiras”, disse João Carlos Basilio,
       presidente-executivo da Abihpec.</p>
-      
+
       <p>O presidente-executivo da Abiquifi, Norberto Prestes, destaca que “essa parceria
       reforça as vantagens e benefícios que há entre os setores que geralmente resultam
       em novos negócios e produtos inovadores aumentando a competitividade das
       empresas no mercado internacional.”</p>
 
       <p>Pharma Connection debate marcos regulatórios em insumos e PDP</p>
-      
+
       <p>Com mudanças previstas sobre os novos marcos regulatórios de Insumos
       Farmacêuticos Ativos e parcerias para o Desenvolvimento Produtivo (PDP), a
       Abiquifi foi responsável pela 3ª edição da Pharma Connection com mais de 70
@@ -80,7 +92,7 @@ export class NoticiasComponent implements OnInit {
       Desenvolvimento e Modernização da Câmara Municipal de Portalegre.</p>
 
       <p>Sobre o Beautycare Brazil</p>
-      
+
       <p>O Beautycare Brazil é desenvolvido por meio de uma parceria entre
       a Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos 
       (Abihpec) e a Agência Brasileira de Promoção de Exportações e Investimentos
@@ -91,7 +103,7 @@ export class NoticiasComponent implements OnInit {
 
       <p>Mais informações: www.beautycarebrazil.org.br</p>
       <p>Sobre o Projeto Brazilian Pharma &amp; Health</p>
-      
+
       <p>O Brazilian Pharma &amp; Health é o projeto de internacionalização dos setores
       farmoquímico, biotecnológico, farmacêutico e veterinário brasileiros, coordenado
       pela Abiquifi (Associação Brasileira da Indústria Farmoquímica e de Insumos
@@ -148,20 +160,20 @@ export class NoticiasComponent implements OnInit {
           <p class="text-center"><small><em>Delegação foi composta por 15 companhias, que realizaram aproximadamente 700 contatos comerciais com organizações de outros países</em></small></p>
         </div>
       </div>
-      
+
       <p>De 15 a 17 de abril, empresas brasileiras de higiene pessoal, perfumaria e cosméticos (HPPC) estiveram na feira Beautyworld Middle East, em Dubai, e fecharam mais de US$ 1 milhão em negócios.</p>
 
-      <p>As perspectivas para os próximos 12 meses são de gerar mais de US$ 6 milhões de vendas. 
-      
-      <p>Em sua 23ª edição, a feira reuniu expositores e visitantes de diversos países, e mostrou a força do mercado árabe para o setor. A participação nacional contou com 15 empresas e foi realizada pela Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC). 
-      
+      <p>As perspectivas para os próximos 12 meses são de gerar mais de US$ 6 milhões de vendas.
+
+      <p>Em sua 23ª edição, a feira reuniu expositores e visitantes de diversos países, e mostrou a força do mercado árabe para o setor. A participação nacional contou com 15 empresas e foi realizada pela Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC).
+
       <p>“Diante da tradição de mais de 17 anos nesta feira e da representatividade global da nossa indústria, ano a ano conquistamos espaços privilegiados em cada nova edição, possibilitando melhores resultados para o setor de HPPC. O esforço e o investimento da ABIHPEC para participar deste evento foram imprescindíveis para garantir a presença das empresas brasileiras " afirma João Carlos Basilio, presidente-executivo da ABIHPEC.
-      
-      <p>Para o embaixador do Brasil em Abu Dhabi, Fernando Luís Lemos Igreja, “o Brasil mantém importante presença no mercado de cosméticos nos Emirados Árabes e na região. Isto é resultado da indústria inovadora que temos no país nesse setor, cada vez mais referência no mercado mundial, e da adaptação de nossas empresas às preferências do consumidor árabe." Gueisa Silverio, gerente de projeto da Associação, destaca a importância da participação brasileira em eventos como este, não apenas para a estratégia de internacionalização das organizações, mas também para a qualificação da percepção sobre o setor de HPPC do país. 
-      
+
+      <p>Para o embaixador do Brasil em Abu Dhabi, Fernando Luís Lemos Igreja, “o Brasil mantém importante presença no mercado de cosméticos nos Emirados Árabes e na região. Isto é resultado da indústria inovadora que temos no país nesse setor, cada vez mais referência no mercado mundial, e da adaptação de nossas empresas às preferências do consumidor árabe." Gueisa Silverio, gerente de projeto da Associação, destaca a importância da participação brasileira em eventos como este, não apenas para a estratégia de internacionalização das organizações, mas também para a qualificação da percepção sobre o setor de HPPC do país.
+
       <p>“A presença de companhias associadas à ABIHPEC nesta feira demonstra o quanto os mercados desta região são importantes para suas exportações. Além das empresas presentes no pavilhão Brasil, outros seis associados estiveram em áreas individuais e relataram um relevante aumento em seus negócios locais”, afirma.`
     },
-    
+
     {
       titulo: "LEI DA BIODIVERSIDADE BRASILEIRA É TEMA DE PALESTRA DA <B>ABIHPEC EM PARIS</B>",
       cor:'purple',
@@ -181,13 +193,13 @@ export class NoticiasComponent implements OnInit {
           <p class="text-center"><small><em>Delegação brasileira foi composta por empresas de HPPC, que realizaram mais de 1.500 interações com organizações de outros países</em></small></p>
         </div>
       </div>
-    
-      
+
+
       <p>Representando o quarto maior mercado de produtos de higiene pessoal, perfumaria e cosméticos do mundo, empresas brasileiras estiveram presentes na in-cosmetics Global 2019 – uma das mais importantes feiras internacionais de ingredientes voltados à indústria do setor – e geraram aproximadamente R$ 5,3 milhões em negócios. A perspectiva é que nos próximos 12 meses ainda sejam produzidos cerca de R$ 15,9 milhões em negociações estimuladas pelo evento, que ocorreu em Paris, entre os dias 2 e 4 de abril.</p>
 
-      <p>Já consolidada como um dos momentos mais aguardados do calendário do setor de HPPC mundial, a in-cosmetics Global 2019 reuniu centenas de expositores e milhares de visitantes de diversos países. A participação nacional foi possibilitada pelo Beautycare Brazil, uma realização da Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC) e da Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil).</p> 
+      <p>Já consolidada como um dos momentos mais aguardados do calendário do setor de HPPC mundial, a in-cosmetics Global 2019 reuniu centenas de expositores e milhares de visitantes de diversos países. A participação nacional foi possibilitada pelo Beautycare Brazil, uma realização da Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC) e da Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil).</p>
 
-      <p>Para a gerente do projeto, Gueisa Silverio, os expositores brasileiros chamaram a atenção do público presente e contribuíram para a qualificação da percepção sobre o setor de HPPC do país.</p> 
+      <p>Para a gerente do projeto, Gueisa Silverio, os expositores brasileiros chamaram a atenção do público presente e contribuíram para a qualificação da percepção sobre o setor de HPPC do país.</p>
 
       <p>“Pela relevância e tamanho do mercado de HPPC brasileiro, a exposição das empresas do Brasil sempre atrai o interesse de diversos atores globais. Estas companhias realizaram mais de 1.500 interações com organizações de outros países durante o evento. Segundo a organização da in-cosmetics Global, a feira cresceu 29% em número de visitantes, e isso se reflete em mais oportunidades para os participantes”, afirma.</p>
 
@@ -209,8 +221,8 @@ export class NoticiasComponent implements OnInit {
       titulo: "EMPRESAS BRASILEIRAS GERAM <B>US$ 3,6 MILHÕS EM NEGÓCIOS</B> REALIZADOS NA COSMOPROF, EM BOLONHA",
       cor:'red',
       show:false,
-      conteudo: `    
-      
+      conteudo: `
+
       <p>Quantidade de empresas presentes n-o pavilhão brasileiro neste ano cresceu em relação a 2018  O setor de higiene pessoal, perfumaria e cosméticos do Brasil marcou presença relevante na Cosmoprof Worldwide, sendo representado por 54 empresas, número 16% maior do que o verificado em 2018. Considerada mundialmente como a principal feira do segmento, a Cosmoprof foi realizada em Bolonha (Itália), entre os dias 14 e 17 de março, e serviu de oportunidade para a geração de US$ 3,6 milhões em negócios para as companhias do país. A expectativa para os próximos 12 meses é que sejam gerados cerca de US$ 26,5 milhões por meio dos contatos iniciados no evento.  </p>
 
       <p>A participação nacional no evento foi uma iniciativa do Beautycare Brazil, projeto realizado pela Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC) e pela Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil). </p>
@@ -245,7 +257,7 @@ export class NoticiasComponent implements OnInit {
 
       <p>As indústrias brasileiras estarão em sete diferentes halls, incluindo um espaço para experimentação e demonstração de produtos, totalizando uma área aproximada de 950 m2, onde serão apresentadas as principais tendências do setor. </p>
 
-      <p>Novidade <br /> 
+      <p>Novidade <br />
       Em 16 de março, o Beautycare Brazil promoverá, em parceria com o Consulado Brasileiro em Milão, na Itália, um coquetel com o objetivo de aproximar as empresas expositoras brasileiras do setor de higiene pessoal, perfumaria e cosméticos de potenciais parceiros italianos. “Neste ano, com a Cosmoprof e com este inédito evento em parceria com o Consulado, a nossa expectativa é valorizar e incentivar ainda mais as indústrias do nosso setor que querem exportar, proporcionando canais de contato com importantes players do mercado”, afirma Silverio.</p>
       `
     },
@@ -262,11 +274,11 @@ export class NoticiasComponent implements OnInit {
       <p class="mt-3">De 22 a 25 de julho, 19 empresas nacionais de higiene pessoal, perfumaria e cosméticos participaram do Road Show México. Ao todo foram realizadas 159 reuniões com importadores e distribuidores locais e a expectativa de gerar, em 12 meses, cerca de US$ 3,7 milhões em novos negócios.</p>
 
       <p>A iniciativa promovida pelo Beautycare Brazil - projeto setorial coordenado pela Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC), em parceria com Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil) - é uma ação customizada de acordo com o perfil que a empresa nacional busca no país alvo, com o objetivo ampliar a presença brasileira no mercado internacional.</p>
-     
+
       <p>Para Gueisa Silvério, gerente do Beautycare Brazil, esta missão comercial possibilitou que as empresas compreendessem melhor sobre o formato de distribuição e posicionamento de produtos no mercado mexicano. “Com reuniões individuais e, preferencialmente, nas instalações das empresas locais, esta ação colocou o empresário em contato direto com seu potencial parceiro comercial, possibilitando maior assertividade de agenda para realização de negócios e grande satisfação por parte do grupo participante do evento”, conta. </p>
-     
+
       <p>Entre as atividades realizadas ao longo dos quatro dias, o Road Show possibilitou a capacitação sobre registro de produtos, aduana, acordos comerciais, entre outros temas apresentados por consultorias especializadas; visitas a diversos pontos de vendas para identificar marcas e produtos já presentes no México; e reuniões com empresários locais a fim de encontrar potenciais parceiros e aumentar seus resultados em exportações de produtos do setor de HPPC.</p>
-     
+
       <p>O Road Show contou com a importante presença de Lucas Frota, Chefe do Setor Comercial da Embaixada do Brasil no México, que explicou aos participantes algumas das particularidades desse mercado. “O México é um grande mercado potencial para as exportações brasileiras de produtos de higiene pessoal, perfumaria e cosméticos. Além de ser o segundo maior mercado consumidor na América Latina, já é o terceiro principal destino das exportações do segmento. Além disso, os impostos de importação, não muito elevados, permitem o aceso tarifário ao mercado local”, destacou.</p>
       `
     },
@@ -281,7 +293,7 @@ export class NoticiasComponent implements OnInit {
           <p class="text-center"><small><em>Feira teve um aumento de 42% na participação nacional em 2018, na comparação com o ano anterior</em></small></p>
         </div>
       </div>
-      
+
       <p>Com uma representativa presença brasileira de empresas de higiene pessoal, perfumaria e cosméticos ainda maior que nos anos anteriores, foi encerrada nesta terça-feira a Cosmoprof North America. Realizada no Mandalay Bay Convention Center, em Las Vegas, entre os dias 29 e 31 de julho, a feira proporcionou aos participantes do Beautycare Brazil 810 contatos comerciais. A expectativa para os próximos 12 meses é que sejam gerados cerca de US$10,3 milhões em novos negócios resultantes do evento. </p>
 
       <p>Durante os três dias de feira, a Cosmoprof North America gerou oportunidades para mais de mil expositores de 39 países diferentes. A participação nacional é uma iniciativa do Beautycare Brazil, uma realização da Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC) e da Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil).</p>
@@ -293,7 +305,7 @@ export class NoticiasComponent implements OnInit {
       titulo: "<B>EXPECTATIVA DE NEGÓCIOS</B> PARA EMPRESAS BRASILEIRAS APÓS IN-COSMETICS NORTH AMERICA É DE <B>US$ 11,3 MILHÕES</B>",
       cor:'purple',
       show:false,
-      conteudo: `      
+      conteudo: `
       <p>Realizada em Nova Iorque, nos Estados Unidos, entre os dias 17 e 18 de outubro, a edição 2018 da in-cosmetics North America, feira que reúne expositores de matérias-primas, fragrâncias, equipamento de laboratório, testes e soluções regulatórias, proporcionou aos participantes brasileiros 729 contatos comerciais e US$1,9 milhões em negócios realizados. A expectativa para os próximos 12 meses é que sejam gerados cerca de US$11,3 milhões em novos negócios resultantes do evento. </p>
 
       <p>Durante os dois dias, a feira, gerou oportunidades para mais de 150 expositores, sendo 11 brasileiros. A participação nacional é uma iniciativa do Beautycare Brazil, uma realização da Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC) e da Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil). </p>
@@ -314,7 +326,7 @@ export class NoticiasComponent implements OnInit {
           <p class="text-center"><small><em>Gueisa Silverio, gerente do Beautycare Brazil; Julio F. Laranjeira, Cônsul do Brasil em Milão; Anna Marcella e Maria Ester, representantes do Consulado; João Carlos Basilio, presidente-executivo da ABIHPEC; Gabriel Isaacsson, gestor de Projeto da Apex-Brasil</em></small></p>
         </div>
       </div>
-      
+
       <p>Com um aumento de 30% da presença brasileira em relação a 2017, as 46 empresas de higiene pessoal, perfumaria e cosméticos presentes à Cosmoprof Worldwide (Bolonha - Itália), principal evento mundial do setor, encerram o evento nessa segunda-feira (19) totalizando mais de US$3,5 milhões em negócios fechados e 1,7 mil contatos comerciais. A expectativa para os próximos 12 meses é que sejam gerados cerca de US$19,2 milhões.-</p>
 
       <p>Durante os cinco dias de feira, a Cosmoprof Worldwide 2018 recebeu visitantes de mais de 70 países. A participação nacional é uma iniciativa do Beautycare Brazil, uma realização da Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC) e da Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil).</p>
@@ -339,7 +351,7 @@ export class NoticiasComponent implements OnInit {
           <p class="text-center"><small><em>Empresas de higiene pessoal, perfumaria e cosméticos abriram espaço para novos negócios e fizeram 1.500 novos contatos comerciais </em></small></p>
         </div>
       </div>
-      
+
       <p>O Oriente Médio está tornando-se um mercado cada vez mais relevante para as indústrias brasileiras de higiene pessoal, perfumaria e cosméticos. A mais importante feira do setor na região, a Beautyworld Middle East 2018, entre os dias 8 e 10 de maio, contou com a participação de 42 empresas nacionais e teve como resultado negócios ao país de US$ 3,4 milhões, além de 1.500 contatos comerciais. A expectativa é que sejam gerados nos próximos 12 meses mais US$ 18,7 milhões, fruto das negociações realizadas durante o evento. </p>
 
       <p>Durante os três dias, a feira recebeu mais de 1.700 expositores de 62 países e 25 pavilhões internacionais, proporcionando um ambiente repleto de inovação, tendências pioneiras, profissionais talentosos e produtos revolucionários. A participação brasileira foi viabilizada pelo Beautycare Brazil – projeto setorial coordenado pela Associação Brasileira da Indústria de Higiene Pessoal, Perfumaria e Cosméticos (ABIHPEC), em parceria com Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil).</p>
@@ -373,7 +385,7 @@ export class NoticiasComponent implements OnInit {
           <p class="text-center"><small><em>Daniel Zanetti e Stephen Guthartz, executivos da Reed Exhibition; Tiago Milani, coordenador do Beautycare Brazil; Regina Dunlop, embaixadora do Brasil nos Países Baixos; e Gueisa Silverio, gerente do Beautycare Brazil</em></small></p>
         </div>
       </div>
-      
+
       <p>Gueisa Silverio, gerente do Beautycare Brazil, acompanhou os expositores e ressaltou a importância do evento. “A participação em uma feira itinerante, como a in-cosmetics, permite que os expositores apresentem os ingredientes nacionais a diversos fabricantes, despertando o interesse mundial para os nossos produtos e, consequentemente, promovendo a geração de mais negócios”, destaca. “A edição do ano que vem deve acontecer em Paris e contará novamente com a participação de empresas brasileiras”, afirma Gueisa.</p>
 
       <p>Para a Embaixadora do Brasil nos Países Baixos, Regina Maria Cordeiro Dunlop, que visitou a feira no dia da abertura, a participação do Brasil constitui uma oportunidade valiosa para os expositores ampliarem sua rede de contatos e avançarem no processo de internacionalização de um setor que ganha cada vez maior relevância para o país. “O Brasil tem características únicas, que o tornam particularmente atrativo para o setor mundial de cosméticos. Além de ser o quarto maior mercado consumidor, o país, com a sua população etnicamente diversa, desenvolve uma indústria criativa e inovadora. ”</p>
@@ -381,7 +393,7 @@ export class NoticiasComponent implements OnInit {
       <p>As empresas que representaram o país na in-cosmetics Global, por meio do Beautycare Brazil, foram: ALLERGISA, AQIA, ASSESSA, ATINA ATIVOS NATURAIS, BRAZILIAN KIMBERLITE CLAY, CHEMYUNION, CITRÓLEO, ICOSMETOLOGIA EDUCACIONAL, NANOVETORES, OXITENO e PLANTUS.</p>
       `
     },
-    
+
   ];
   constructor() { }
 
