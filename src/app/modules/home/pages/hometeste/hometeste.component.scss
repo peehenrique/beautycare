@@ -1,0 +1,70 @@
+.banner img{
+    position: absolute;    
+}
+.banner{
+    height: 650px;
+}
+
+.titulopainel{
+    background: #fd8c3f;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    padding: 4px;
+}
+.backgroundpainel{
+    background: url("/assets/images/painesinterativosnovo.jpg");
+    background-position: bottom center;
+    height: 600px;
+}
+.backgroundpainel a{
+    color:#555 !important;
+}
+
+.calendario{
+    width: 100%;
+    font-size: 30px;
+}
+
+.calendario thead tr{
+    background: #fcb03d;
+}
+
+.calendario thead tr th{
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+}
+
+.calendario thead button{
+    background: #fff;
+    color: #fcb03d;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    line-height: 10px;
+    border-radius: 66px;
+    cursor: pointer;
+}
+
+.calendario thead button:hover{
+    background: #fdcc83;
+    color: #fcb03d;
+}
+
+.calendario tbody tr td{
+    padding: 10px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.fds{
+    background: #DEDEDE;
+}
+
+.diaEvento{
+    background: #fcb03d;
+    color:#FFF;
+}
