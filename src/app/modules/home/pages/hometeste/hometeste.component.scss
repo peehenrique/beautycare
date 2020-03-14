@@ -68,3 +68,20 @@
     background: #fcb03d;
     color:#FFF;
 }
+
+@media only screen and (max-width: 600px) {
+  .coluna_responsiva{
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 100% !important;
+  }
+  .banner{
+    height: 300px;
+  }
+  .mt-2{
+    margin-top: 3em !important;
+  }
+  .calendario{
+    width: 80% !important;
+  }
+}
