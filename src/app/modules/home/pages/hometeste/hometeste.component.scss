@@ -10,8 +10,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    font-size: 24px;
+    font-size: 19px;
     padding: 4px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 .backgroundpainel{
     // background: url("/assets/images/painesinterativosnovo.jpg");
@@ -28,7 +30,7 @@
 }
 
 .calendario thead tr{
-    background: #fcb03d;
+    background: #fd8c3f;
 }
 
 .calendario thead tr th{
@@ -65,7 +67,7 @@
 }
 
 .diaEvento{
-    background: #fcb03d;
+    background: #fd8c3f;
     color:#FFF;
 }
 
