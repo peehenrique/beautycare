@@ -24,6 +24,7 @@
             <li *ngIf="globals.role && globals.role !== 'guest'"><a routerLink="/mercado" (click)="open = !open">Mercado</a></li>
             <li *ngIf="globals.role && globals.role === 'admin'"><a routerLink="/admin/noticias" (click)="open = !open">Adm. Notícias</a></li>
             <li *ngIf="globals.role && globals.role === 'admin'"><a routerLink="/admin/empresas" (click)="open = !open">Adm. Empresas</a></li>
+            <li *ngIf="globals.role && globals.role === 'admin'"><a routerLink="/admin/arquivos" (click)="open = !open">Subir Arquivos</a></li>
         </ul>
     </div>
     <div class="logo" routerLink="/"></div>

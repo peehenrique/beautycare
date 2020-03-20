@@ -15,6 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_empresa_empresa_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/empresa/empresa.component */ "./src/app/modules/admin/pages/empresa/empresa.component.ts");
 /* harmony import */ var _pages_empresas_empresas_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/empresas/empresas.component */ "./src/app/modules/admin/pages/empresas/empresas.component.ts");
 /* harmony import */ var _pages_noticias_noticias_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/noticias/noticias.component */ "./src/app/modules/admin/pages/noticias/noticias.component.ts");
+/* harmony import */ var _pages_arquivos_arquivos_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/arquivos/arquivos.component */ "./src/app/modules/admin/pages/arquivos/arquivos.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -26,8 +27,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     { path: 'noticias', component: _pages_noticias_noticias_component__WEBPACK_IMPORTED_MODULE_4__["NoticiasComponent"] },
+    { path: 'arquivos', component: _pages_arquivos_arquivos_component__WEBPACK_IMPORTED_MODULE_5__["ArquivosComponent"] },
     { path: 'empresas', component: _pages_empresas_empresas_component__WEBPACK_IMPORTED_MODULE_3__["EmpresasComponent"] },
     { path: 'empresa/:id', component: _pages_empresa_empresa_component__WEBPACK_IMPORTED_MODULE_2__["EmpresaComponent"] }
 ];
@@ -67,12 +70,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_noticias_noticias_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/noticias/noticias.component */ "./src/app/modules/admin/pages/noticias/noticias.component.ts");
 /* harmony import */ var _pages_empresas_empresas_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/empresas/empresas.component */ "./src/app/modules/admin/pages/empresas/empresas.component.ts");
 /* harmony import */ var _pages_empresa_empresa_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/empresa/empresa.component */ "./src/app/modules/admin/pages/empresa/empresa.component.ts");
+/* harmony import */ var _pages_arquivos_arquivos_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/arquivos/arquivos.component */ "./src/app/modules/admin/pages/arquivos/arquivos.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -97,10 +102,73 @@ var AdminModule = /** @class */ (function () {
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbPaginationModule"],
                 _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_4__["NgSelectModule"]
             ],
-            declarations: [_pages_noticias_noticias_component__WEBPACK_IMPORTED_MODULE_7__["NoticiasComponent"], _pages_empresas_empresas_component__WEBPACK_IMPORTED_MODULE_8__["EmpresasComponent"], _pages_empresa_empresa_component__WEBPACK_IMPORTED_MODULE_9__["EmpresaComponent"]]
+            declarations: [_pages_noticias_noticias_component__WEBPACK_IMPORTED_MODULE_7__["NoticiasComponent"], _pages_empresas_empresas_component__WEBPACK_IMPORTED_MODULE_8__["EmpresasComponent"], _pages_empresa_empresa_component__WEBPACK_IMPORTED_MODULE_9__["EmpresaComponent"], _pages_arquivos_arquivos_component__WEBPACK_IMPORTED_MODULE_10__["ArquivosComponent"]]
         })
     ], AdminModule);
     return AdminModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/modules/admin/pages/arquivos/arquivos.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/modules/admin/pages/arquivos/arquivos.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Arquivos</h1>\r\n\r\n\r\n<div class=\"row\">\r\n  <iframe src=\"http://beautycarebrazil.org.br/boletins/subir\" width=\"100%\" height=\"600\" frameBorder=\"0\"></iframe>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/admin/pages/arquivos/arquivos.component.scss":
+/*!**********************************************************************!*\
+  !*** ./src/app/modules/admin/pages/arquivos/arquivos.component.scss ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div.p {\n  margin: 20px 169px;\n  font-family: \"Encode Sans\";\n  font-size: 16px; }\n\nh1 {\n  margin-left: 100px;\n  font-family: \"Encode Sans\";\n  text-transform: uppercase;\n  font-weight: bold;\n  color: #026a82; }\n\nh4 {\n  margin-left: 100px;\n  font-family: \"Encode Sans\";\n  color: #026a82 !important; }\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/admin/pages/arquivos/arquivos.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/modules/admin/pages/arquivos/arquivos.component.ts ***!
+  \********************************************************************/
+/*! exports provided: ArquivosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArquivosComponent", function() { return ArquivosComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArquivosComponent = /** @class */ (function () {
+    function ArquivosComponent() {
+    }
+    ArquivosComponent.prototype.ngOnInit = function () {
+    };
+    ArquivosComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-arquivos',
+            template: __webpack_require__(/*! ./arquivos.component.html */ "./src/app/modules/admin/pages/arquivos/arquivos.component.html"),
+            styles: [__webpack_require__(/*! ./arquivos.component.scss */ "./src/app/modules/admin/pages/arquivos/arquivos.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArquivosComponent);
+    return ArquivosComponent;
 }());
 
 

@@ -9,6 +9,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { EmpresasComponent } from './pages/empresas/empresas.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
+import { ArquivosComponent } from './pages/arquivos/arquivos.component';
 
 @NgModule({
     imports: [
@@ -20,6 +21,6 @@ import { EmpresaComponent } from './pages/empresa/empresa.component';
         NgbPaginationModule,
         NgSelectModule
     ],
-    declarations: [NoticiasComponent, EmpresasComponent, EmpresaComponent]
+    declarations: [NoticiasComponent, EmpresasComponent, EmpresaComponent, ArquivosComponent]
 })
 export class AdminModule {}
