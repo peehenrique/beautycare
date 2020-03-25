@@ -4,21 +4,21 @@
             <span class="txt">App BeautyCare Brazil</span>
             <span class="app-store">AppStore</span>
             <span class="android">Android</span>
-            <span class="instagram mr-3">Instagram</span>
+            <a href="https://www.instagram.com/beautycarebrazil/" target="_blank" class="instagram mr-3"></a>
             <span class="user pr-4" *ngIf="globals.isSignedIn">Olá {{globals.nameSignedIn}}. <a (click)="logout()">sair</a></span>
         </div>
     </div>
     <div class="navbar-toggle" (click)="open = !open"></div>
     <div class="nav" [ngClass]="{'open': open}">
         <ul class="site-nav">
-            <li><a routerLink="/institucional">Institucional</a></li>
-            <li><a routerLink="/sobre">Sobre o projeto</a></li>
-            <li><a routerLink="/documentos">Documentos</a></li>
+            <li><a routerLink="/institucional" (click)="open = !open">Institucional</a></li>
+            <li><a routerLink="/sobre" (click)="open = !open">Sobre o projeto</a></li>
+            <li><a routerLink="/documentos" (click)="open = !open">Documentos</a></li>
             <li><a routerLink="/empresas" (click)="open = !open">Empresas Participantes</a></li>
-            <li><a routerLink="/informacoes">Informações de Mercado</a></li>
-            <li><a routerLink="/calendario">Calendário</a></li>
-            <li><a routerLink="/noticias">Notícias</a></li>
-            <li><a routerLink="/contato">Contato</a></li>
+            <li><a routerLink="/informacoes" (click)="open = !open">Informações de Mercado</a></li>
+            <li><a routerLink="/calendario" (click)="open = !open">Calendário</a></li>
+            <li><a routerLink="/noticias" (click)="open = !open">Notícias</a></li>
+            <li><a routerLink="/contato" (click)="open = !open">Contato</a></li>
             <li><a routerLink="/cadastro/edit" (click)="open = !open">Editar Cadastro</a></li>
             <li><a routerLink="/cadastro/perfil" (click)="open = !open">Perfil</a></li>
             <li *ngIf="globals.role && globals.role !== 'guest'"><a routerLink="/mercado" (click)="open = !open">Mercado</a></li>

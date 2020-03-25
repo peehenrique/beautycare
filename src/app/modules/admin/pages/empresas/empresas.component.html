@@ -42,7 +42,7 @@
                     <td>
                       <a class="btn btn-slim btn-liberar pointer linky" (click)="bloquear(e.user_id)" *ngIf="e.role === 'user'">bloquear</a>
                       <a class="btn btn-slim btn-liberar pointer" (click)="liberar(e.user_id)" *ngIf="e.role === 'guest'">liberar</a> |
-                      <a class="btn btn-open" target="_blank" routerLink="/admin/empresa/{{e.id}}">ver</a> |
+                      <a class="btn btn-open" target="_blank" routerLink="/empresas/empresa/{{e.id}}">ver</a> |
                       <a class="btn btn-open" target="_blank" routerLink="/admin/empresa/{{e.id}}">editar</a>
                     </td>
                 </tr>

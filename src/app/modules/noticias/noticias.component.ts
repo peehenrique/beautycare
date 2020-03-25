@@ -9,8 +9,19 @@ export class NoticiasComponent implements OnInit {
 
   public noticias:any[] = [
     {
+      titulo: `<b>Beautyworld Middle East</b> é adiada para agosto`,
+      cor:'azul2',
+      show:false,
+      conteudo: `
+        <small>17 a 19 de agosto</small>
+        <p>A Beautyworld Middle East 2020 - maior feira internacional dos Emirados Árabes Unidos voltada ao setor de higiene pessoal, perfumaria e cosméticos - foi adiada para 17 a 19 de agosto, em decorrência da crise mundial do coronavírus. A informação foi publicada oficialmente pela Messe Frankfurt Middle East, empresa organizadora do evento.</p>
+        <p>"Apoiamos as medidas que os governos estão implementando para conter o Covid-19 e reiteramos que a segurança e o bem-estar de expositores e visitantes são a nossa maior prioridade”, afirma Simon Mellor, CEO da Messe Frankfurt Middle East. </p>
+        <p>Para mais informações: <a href="" target="_blank">www.beautyworldme.com</a></p>
+      `
+    },
+    {
       titulo: `<b>IN-COSMETICS GLOBAL 2020</b> TEM NOVA DATA: 30 DE JUNHO A 2 DE JULHO`,
-      cor:'orange',
+      cor:'azul1',
       show:false,
       conteudo: `
         <p align="center"><img src="assets/images/noticias/incosmetics.jpg" alt="" width="289" height="289"/></p>
@@ -22,7 +33,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: `<B>ABIHPEC</B> E <B>ITALCAM</B> ASSINARAM ACORDO PARA FORTALECER OS NEGÓCIOS INTERNACIONAIS ENTRE O BRASIL E A ITÁLIA`,
-      cor:'red',
+      cor:'azul2',
       show:false,
       conteudo: `
         <p align="center"><img src="https://abihpec.org.br/site2019/wp-content/uploads/2019/11/340d6c5e-24c5-4918-b09c-bc1caf165da2-380x380.jpg" alt="" width="289" height="289" srcset="https://abihpec.org.br/site2019/wp-content/uploads/2019/11/340d6c5e-24c5-4918-b09c-bc1caf165da2-380x380.jpg 380w, https://abihpec.org.br/site2019/wp-content/uploads/2019/11/340d6c5e-24c5-4918-b09c-bc1caf165da2-700x700.jpg 700w" sizes="(max-width: 289px) 100vw, 289px" /></p>
@@ -36,7 +47,7 @@ export class NoticiasComponent implements OnInit {
     {
       titulo: `ABIHPEC MARCA PRESENÇA NA <B>CPHi
       WORDWIDE</B>, MAIOR FEIRA DA CADEIA INDUSTRIAL FARMACÊUTICA NO MUNDO`,
-      cor:'purple',
+      cor:'azul1',
       show:false,
       conteudo: `
       <p>Abihpec marca presença na CPhl Wordwide, maior feira da cadeia industrial
@@ -119,7 +130,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "<B>BEAUTYCARE BRAZIL</B> É DESTAQUE NA IN-COSMETCIS NORTH AMERICA",
-      cor:'orange',
+      cor:'azul2',
       show:false,
       conteudo: `
       <p>A feira gerou mais de US$ 1,3 milhão em negócios para as empresas brasileiras de cuidados pessoais.</p>
@@ -151,7 +162,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "EMPRESAS BRASILEIRAS <B>GERAM MAIS DE US$ 1 MILHÃO EM NEGÓCIOS</B> REALIZADOS EM FEIRA DE DUBAI",
-      cor:'red',
+      cor:'azul1',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -176,7 +187,7 @@ export class NoticiasComponent implements OnInit {
 
     {
       titulo: "LEI DA BIODIVERSIDADE BRASILEIRA É TEMA DE PALESTRA DA <B>ABIHPEC EM PARIS</B>",
-      cor:'purple',
+      cor:'azul2',
       show:false,
       conteudo: `
       <img src="assets/images/noticias/Pasted-1.png" />
@@ -184,7 +195,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "EMPRESAS BRASILEIRAS GERAM <B>US$ 5,3 MILHÕS EM NEGÓCIOS</B> REALIZADOS NA IN-COSMETICS, EM PARIS",
-      cor:'orange',
+      cor:'azul1',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -219,7 +230,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "EMPRESAS BRASILEIRAS GERAM <B>US$ 3,6 MILHÕS EM NEGÓCIOS</B> REALIZADOS NA COSMOPROF, EM BOLONHA",
-      cor:'red',
+      cor:'azul2',
       show:false,
       conteudo: `
 
@@ -243,7 +254,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "BEAUTYCARE BRAZIL <B>AMPLIA EM 16%</B> O NÚMERO DE EMPRESAS PARTICIPANTES NA COSMOPROF WORLDWIDE",
-      cor:'purple',
+      cor:'azul1',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -263,7 +274,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "<B>ROAD SHOW NO MÉXICO</B> DEVE GERAR US$ 3,7 MILHÕES EM NEGÓCIOS PARA AS EMPRESAS DO BEAUTYCARE BRAZIL",
-      cor:'orange',
+      cor:'azul2',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -284,7 +295,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "<B>COSMOPROF NORTH AMERICA</B> GERA EXPECTATICVA DE US$ 10,3 MILHÕES EM NEGÓCIOS PARA EMPRESAS BRASILEIRAS",
-      cor:'red',
+      cor:'azul1',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -303,7 +314,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "<B>EXPECTATIVA DE NEGÓCIOS</B> PARA EMPRESAS BRASILEIRAS APÓS IN-COSMETICS NORTH AMERICA É DE <B>US$ 11,3 MILHÕES</B>",
-      cor:'purple',
+      cor:'azul2',
       show:false,
       conteudo: `
       <p>Realizada em Nova Iorque, nos Estados Unidos, entre os dias 17 e 18 de outubro, a edição 2018 da in-cosmetics North America, feira que reúne expositores de matérias-primas, fragrâncias, equipamento de laboratório, testes e soluções regulatórias, proporcionou aos participantes brasileiros 729 contatos comerciais e US$1,9 milhões em negócios realizados. A expectativa para os próximos 12 meses é que sejam gerados cerca de US$11,3 milhões em novos negócios resultantes do evento. </p>
@@ -317,7 +328,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "EMPRESAS BRASILEIRAS DEVEM GERAR <B> US$ 19,2 EM NEGÓCIOAS</B> APÓS A COSMOPROF WORLDWIDE",
-      cor:'orange',
+      cor:'azul1',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -342,7 +353,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "<B>BRASIL SE DESTACA EM FEIRA NO ORIENTE MÉDIO</B> COM PRODUTOS INOVADORES",
-      cor:'red',
+      cor:'azul2',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">
@@ -365,7 +376,7 @@ export class NoticiasComponent implements OnInit {
     },
     {
       titulo: "EMPRESAS BRASILEIRAS DEVEM GERAR <B>MAIS DE US$ 16,3 MILHÕES EM NEGÓCIOS</B> APÓS A FEIRA IN-COSMETICS GLOBAL",
-      cor:'purple',
+      cor:'azul1',
       show:false,
       conteudo: `
       <div class="d-flex justify-content-center">

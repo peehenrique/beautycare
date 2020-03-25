@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { ContatoComponent } from './modules/contato/contato.component';
 import { InformacoesComponent } from './modules/informacoes/informacoes.component';
+import { ManualTecnicoComponent } from './modules/manual-tecnico/manual-tecnico.component';
 import { DocumentosComponent } from './modules/documentos/documentos.component';
 import { CalendarioComponent } from './modules/calendario/calendario.component';
 import { NoticiasComponent } from './modules/noticias/noticias.component';
-import { ManualTecnicoComponent } from './modules/manual-tecnico/manual-tecnico.component';
 
 const routes: Routes = [
     {path: '', loadChildren: './modules/home/home.module#HomeModule'},
@@ -15,6 +15,7 @@ const routes: Routes = [
     {path: 'empresas', loadChildren: './modules/empresas/empresas.module#EmpresasModule'},
     {path: 'contato', component:ContatoComponent},
     {path: 'informacoes', component:InformacoesComponent},
+    {path: 'manual-tecnico', component:ManualTecnicoComponent},
     {path: 'documentos', component:DocumentosComponent},
     {path: 'documentos/manual-tecnico', component:ManualTecnicoComponent},
     {path: 'calendario', component:CalendarioComponent},

@@ -121,8 +121,10 @@ export class EmpresaComponent implements OnInit {
                                     if (+p.id === +response.output[k]) {
                                         this.companyDataFormGroup.get(k).patchValue(p.iso);
                                         // console.log('-----');
+
                                     } else {
                                         // console.log(p.id);
+
                                     }
                                 }, this);
                             } else if (k === 'area_code') {
@@ -169,11 +171,16 @@ export class EmpresaComponent implements OnInit {
                     console.log('Response register:', response.output);
                     if (response.status) {
                         this.upd_success = true;
+                        console.log('cadastrou com sucesso');
                     }
                 }
             );
+            this.upd_success = true;
+            console.log('cadastrou com sucesso 1');
         } else {
             this.utilitiesService.validateAllFormFields(this.companyDataFormGroup);
+            console.log('cadastrou com sucesso 2');
+
         }
     }
 
