@@ -1,0 +1,53 @@
+<div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
+  <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
+    <div class="row w-100">
+      <div class="col-12 col-xl-10 mx-auto mb-5">
+        <div class="auto-form-wrapper">
+          <form (ngSubmit)="signIn()" [formGroup]="loginFormGroup">
+
+            <div class="row">
+              <div class="col-xl-5">
+                <h4>Ainda não possui cadastro?</h4>
+                <div class="text-block text-center mt-3 mb-5"><a routerLink="/cadastro" class="btn btn-primary btn-cadastro">Clique aqui e cadastre-se agora!</a></div>
+              </div>
+              <div class="col-xl-2 d-none d-xl-flex"></div>
+              <div class="col-xl-5">
+                <h4>Já possui cadastro? Faça login!</h4>
+                  <div class="form-group">
+                    <label class="label">E-mail</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" formControlName="email" placeholder="email@example.com">
+                      <div class="input-group-append">
+                        <span class="input-group-text">
+                          <i class="mdi mdi-check-circle-outline"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="label">Password</label>
+                    <div class="input-group">
+                      <input type="password" class="form-control" formControlName="password">
+                      <div class="input-group-append">
+                        <span class="input-group-text">
+                          <i class="mdi mdi-check-circle-outline"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary submit-btn btn-block">Login</button>
+                  </div>
+                  <div class="form-group d-flex justify-content-between">
+                    <a routerLink="/auth/recuperar-senha" class="text-small forgot-password text-black">Esqueceu sua senha?</a>
+                  </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+</div>

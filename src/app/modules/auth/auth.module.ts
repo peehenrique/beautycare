@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './pages/login/login.component';
+import { LogininfoComponent } from './pages/logininfo/logininfo.component';
 import { ForgotComponent } from './pages/forgot/forgot.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 
@@ -14,6 +15,6 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
         FormsModule,
         ReactiveFormsModule
     ],
-    declarations: [LoginComponent, ForgotComponent, RecoverPasswordComponent]
+    declarations: [LoginComponent, ForgotComponent, RecoverPasswordComponent, LogininfoComponent]
 })
 export class AuthModule {}

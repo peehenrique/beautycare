@@ -8,11 +8,11 @@ import { AuthService } from '../../../../core/services/auth.service';
 
 @Component({
     selector: 'app-login',
-    templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss'],
+    templateUrl: './logininfo.component.html',
+    styleUrls: ['./logininfo.component.scss'],
     providers: [AuthService]
 })
-export class LoginComponent implements OnInit {
+export class LogininfoComponent implements OnInit {
 
     public loginFormGroup: FormGroup;
     public showSignInError = false;
@@ -77,7 +77,7 @@ export class LoginComponent implements OnInit {
                         this.globals.userId = this.me.id;
                         console.log('this.globals.urlAfterSignIn: ' + this.globals.urlAfterSignIn);
 
-                        this.router.navigate(['/']);
+                        this.router.navigate(['/manual-tecnico']);
                     }
                 } else {
                     this.showSignInError = true;

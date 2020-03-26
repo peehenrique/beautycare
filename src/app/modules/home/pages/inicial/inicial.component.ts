@@ -19,7 +19,7 @@ import {trigger, style, animate, transition, state} from '@angular/animations';
 })
 export class InicialComponent implements OnInit {
   indexAtivo = 0;
-  banner = [true,false,false,false];
+  banner = [true,false,false];
 
   public dt:Date = new Date();
   public diaUm:Date = new Date(this.dt.setDate(1));
