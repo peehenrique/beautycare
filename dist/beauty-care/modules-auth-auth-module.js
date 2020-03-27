@@ -314,7 +314,7 @@ var LoginComponent = /** @class */ (function () {
                     _this.globals.role = _this.me.role;
                     _this.globals.userId = _this.me.id;
                     console.log('this.globals.urlAfterSignIn: ' + _this.globals.urlAfterSignIn);
-                    _this.router.navigate(['/']);
+                    _this.router.navigate(['/admin/empresas']);
                 }
             }
             else {
@@ -467,7 +467,7 @@ var LogininfoComponent = /** @class */ (function () {
                     _this.globals.role = _this.me.role;
                     _this.globals.userId = _this.me.id;
                     console.log('this.globals.urlAfterSignIn: ' + _this.globals.urlAfterSignIn);
-                    _this.router.navigate(['/manual-tecnico']);
+                    _this.router.navigate(['/informacoes']);
                 }
             }
             else {
