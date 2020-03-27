@@ -77,7 +77,7 @@ export class LoginComponent implements OnInit {
                         this.globals.userId = this.me.id;
                         console.log('this.globals.urlAfterSignIn: ' + this.globals.urlAfterSignIn);
 
-                        this.router.navigate(['/']);
+                        this.router.navigate(['/admin/empresas']);
                     }
                 } else {
                     this.showSignInError = true;

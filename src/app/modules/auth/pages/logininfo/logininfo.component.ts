@@ -77,7 +77,7 @@ export class LogininfoComponent implements OnInit {
                         this.globals.userId = this.me.id;
                         console.log('this.globals.urlAfterSignIn: ' + this.globals.urlAfterSignIn);
 
-                        this.router.navigate(['/manual-tecnico']);
+                        this.router.navigate(['/informacoes']);
                     }
                 } else {
                     this.showSignInError = true;
